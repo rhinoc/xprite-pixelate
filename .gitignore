@@ -1,0 +1,10 @@
+node_modules/
+dist/
+bench/.venv/
+bench/.cache/
+bench/results/raw/
+wasm-src/target/
+__pycache__/
+.DS_Store
+vendor/
+article/

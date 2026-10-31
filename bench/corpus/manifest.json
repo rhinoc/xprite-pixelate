@@ -1,0 +1,4840 @@
+[
+  {
+    "id": "0x72-big-demon-idle-anim-f0",
+    "file": "images/0x72-big-demon-idle-anim-f0.png",
+    "width": 25,
+    "height": 31,
+    "colors": 4,
+    "size_bin": "small",
+    "palette_bin": "2-4",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "16x16 DungeonTileset II v1.7",
+    "author": "0x72",
+    "source_url": "https://0x72.itch.io/dungeontileset-ii",
+    "file_in_source": {
+      "file": "frames/big_demon_idle_anim_f0.png",
+      "rect": [
+        4,
+        5,
+        25,
+        31
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "0x72-chest-full-open-anim-f2",
+    "file": "images/0x72-chest-full-open-anim-f2.png",
+    "width": 16,
+    "height": 16,
+    "colors": 10,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "16x16 DungeonTileset II v1.7",
+    "author": "0x72",
+    "source_url": "https://0x72.itch.io/dungeontileset-ii",
+    "file_in_source": {
+      "file": "frames/chest_full_open_anim_f2.png",
+      "rect": [
+        0,
+        0,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "0x72-elf-f-idle-anim-f0",
+    "file": "images/0x72-elf-f-idle-anim-f0.png",
+    "width": 16,
+    "height": 17,
+    "colors": 8,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "character",
+    "tags": [
+      "transparent"
+    ],
+    "source": "16x16 DungeonTileset II v1.7",
+    "author": "0x72",
+    "source_url": "https://0x72.itch.io/dungeontileset-ii",
+    "file_in_source": {
+      "file": "frames/elf_f_idle_anim_f0.png",
+      "rect": [
+        0,
+        11,
+        16,
+        17
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "0x72-flask-big-green",
+    "file": "images/0x72-flask-big-green.png",
+    "width": 12,
+    "height": 13,
+    "colors": 7,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "16x16 DungeonTileset II v1.7",
+    "author": "0x72",
+    "source_url": "https://0x72.itch.io/dungeontileset-ii",
+    "file_in_source": {
+      "file": "frames/flask_big_green.png",
+      "rect": [
+        2,
+        2,
+        12,
+        13
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "0x72-lizard-f-run-anim-f1",
+    "file": "images/0x72-lizard-f-run-anim-f1.png",
+    "width": 16,
+    "height": 21,
+    "colors": 9,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "animation-frame",
+    "tags": [
+      "transparent"
+    ],
+    "source": "16x16 DungeonTileset II v1.7",
+    "author": "0x72",
+    "source_url": "https://0x72.itch.io/dungeontileset-ii",
+    "file_in_source": {
+      "file": "frames/lizard_f_run_anim_f1.png",
+      "rect": [
+        0,
+        6,
+        16,
+        21
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "0x72-ui-heart-half",
+    "file": "images/0x72-ui-heart-half.png",
+    "width": 13,
+    "height": 12,
+    "colors": 4,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "ui",
+    "tags": [
+      "transparent"
+    ],
+    "source": "16x16 DungeonTileset II v1.7",
+    "author": "0x72",
+    "source_url": "https://0x72.itch.io/dungeontileset-ii",
+    "file_in_source": {
+      "file": "frames/ui_heart_half.png",
+      "rect": [
+        0,
+        0,
+        13,
+        12
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "0x72-weapon-golden-sword",
+    "file": "images/0x72-weapon-golden-sword.png",
+    "width": 10,
+    "height": 22,
+    "colors": 5,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "16x16 DungeonTileset II v1.7",
+    "author": "0x72",
+    "source_url": "https://0x72.itch.io/dungeontileset-ii",
+    "file_in_source": {
+      "file": "frames/weapon_golden_sword.png",
+      "rect": [
+        0,
+        0,
+        10,
+        22
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "0x72-wizzard-m-idle-anim-f0",
+    "file": "images/0x72-wizzard-m-idle-anim-f0.png",
+    "width": 15,
+    "height": 20,
+    "colors": 7,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "character",
+    "tags": [
+      "transparent"
+    ],
+    "source": "16x16 DungeonTileset II v1.7",
+    "author": "0x72",
+    "source_url": "https://0x72.itch.io/dungeontileset-ii",
+    "file_in_source": {
+      "file": "frames/wizzard_m_idle_anim_f0.png",
+      "rect": [
+        1,
+        8,
+        15,
+        20
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-cliffs-clouds",
+    "file": "images/ansimuz-cliffs-clouds.png",
+    "width": 320,
+    "height": 236,
+    "colors": 3,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Magic Cliffs Environment",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/magic-cliffs-environment",
+    "file_in_source": {
+      "file": "clouds.png",
+      "rect": [
+        0,
+        0,
+        320,
+        236
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-cliffs-sea",
+    "file": "images/ansimuz-cliffs-sea.png",
+    "width": 112,
+    "height": 96,
+    "colors": 7,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Magic Cliffs Environment",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/magic-cliffs-environment",
+    "file_in_source": {
+      "file": "sea.png",
+      "rect": [
+        0,
+        0,
+        112,
+        96
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-cliffs-sky",
+    "file": "images/ansimuz-cliffs-sky.png",
+    "width": 112,
+    "height": 304,
+    "colors": 3,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "dithered",
+      "opaque"
+    ],
+    "source": "Magic Cliffs Environment",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/magic-cliffs-environment",
+    "file_in_source": {
+      "file": "sky.png",
+      "rect": [
+        0,
+        0,
+        112,
+        304
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-cliffs-tiles",
+    "file": "images/ansimuz-cliffs-tiles.png",
+    "width": 320,
+    "height": 320,
+    "colors": 28,
+    "size_bin": "large",
+    "palette_bin": "17-64",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Magic Cliffs Environment",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/magic-cliffs-environment",
+    "file_in_source": {
+      "file": "tileset.png",
+      "rect": [
+        0,
+        0,
+        320,
+        320
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-gothic-bg",
+    "file": "images/ansimuz-gothic-bg.png",
+    "width": 320,
+    "height": 288,
+    "colors": 7,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Gothicvania Town",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/gothicvania-town",
+    "file_in_source": {
+      "file": "environment/layers/background.png",
+      "rect": [
+        0,
+        0,
+        320,
+        288
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-gothic-house-c",
+    "file": "images/ansimuz-gothic-house-c.png",
+    "width": 221,
+    "height": 183,
+    "colors": 11,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Gothicvania Town",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/gothicvania-town",
+    "file_in_source": {
+      "file": "environment/props-sliced/house-c.png",
+      "rect": [
+        0,
+        0,
+        221,
+        183
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-gothic-oldman",
+    "file": "images/ansimuz-gothic-oldman.png",
+    "width": 26,
+    "height": 38,
+    "colors": 13,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "character",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Gothicvania Town",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/gothicvania-town",
+    "file_in_source": {
+      "file": "sprites/oldman-walk/oldman-walk-1.png",
+      "rect": [
+        5,
+        4,
+        26,
+        38
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-gothic-press-enter",
+    "file": "images/ansimuz-gothic-press-enter.png",
+    "width": 90,
+    "height": 18,
+    "colors": 2,
+    "size_bin": "medium",
+    "palette_bin": "2-4",
+    "genre": "ui",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Gothicvania Town",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/gothicvania-town",
+    "file_in_source": {
+      "file": "title-screen/press-enter-text.png",
+      "rect": [
+        0,
+        0,
+        90,
+        18
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-gothic-roof",
+    "file": "images/ansimuz-gothic-roof.png",
+    "width": 64,
+    "height": 80,
+    "colors": 4,
+    "size_bin": "medium",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Gothicvania Town",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/gothicvania-town",
+    "file_in_source": {
+      "file": "environment/layers/sliced-tileset/left-roof.png",
+      "rect": [
+        0,
+        0,
+        64,
+        80
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-gothic-title",
+    "file": "images/ansimuz-gothic-title.png",
+    "width": 284,
+    "height": 142,
+    "colors": 2,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "ui",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Gothicvania Town",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/gothicvania-town",
+    "file_in_source": {
+      "file": "title-screen/title-screen.png",
+      "rect": [
+        0,
+        0,
+        284,
+        142
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-gothic-wagon",
+    "file": "images/ansimuz-gothic-wagon.png",
+    "width": 93,
+    "height": 75,
+    "colors": 7,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Gothicvania Town",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/gothicvania-town",
+    "file_in_source": {
+      "file": "environment/props-sliced/wagon.png",
+      "rect": [
+        0,
+        0,
+        93,
+        75
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-gothic-well",
+    "file": "images/ansimuz-gothic-well.png",
+    "width": 65,
+    "height": 65,
+    "colors": 8,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Gothicvania Town",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/gothicvania-town",
+    "file_in_source": {
+      "file": "environment/props-sliced/well.png",
+      "rect": [
+        0,
+        0,
+        65,
+        65
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-mountain-bg",
+    "file": "images/ansimuz-mountain-bg.png",
+    "width": 272,
+    "height": 160,
+    "colors": 5,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "dithered",
+      "opaque"
+    ],
+    "source": "Mountain at Dusk Background",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/mountain-at-dusk-background",
+    "file_in_source": {
+      "file": "parallax-mountain-bg.png",
+      "rect": [
+        0,
+        0,
+        272,
+        160
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-mountain-far",
+    "file": "images/ansimuz-mountain-far.png",
+    "width": 272,
+    "height": 160,
+    "colors": 4,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Mountain at Dusk Background",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/mountain-at-dusk-background",
+    "file_in_source": {
+      "file": "parallax-mountain-montain-far.png",
+      "rect": [
+        0,
+        0,
+        272,
+        160
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-back-gold",
+    "file": "images/ansimuz-sv-back-gold.png",
+    "width": 320,
+    "height": 60,
+    "colors": 3,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/treasure-hoard-platform/PNG/back-gold.png",
+      "rect": [
+        0,
+        0,
+        320,
+        60
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-bird-f0",
+    "file": "images/ansimuz-sv-bird-f0.png",
+    "width": 27,
+    "height": 27,
+    "colors": 7,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "animation-frame",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Sprites/flying-bird/sprites/flying-creature-cycle-skin.png",
+      "rect": [
+        1,
+        4,
+        27,
+        27
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-boat-front",
+    "file": "images/ansimuz-sv-boat-front.png",
+    "width": 107,
+    "height": 124,
+    "colors": 6,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/ships-graveyard/PNG/layers/boat-front.png",
+      "rect": [
+        3,
+        3,
+        107,
+        124
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-boss-dragon",
+    "file": "images/ansimuz-sv-boss-dragon.png",
+    "width": 73,
+    "height": 40,
+    "colors": 9,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Sprites/Grotto-escape-2-boss-dragon/PNG/sprites/idle/_0000_Layer-1.png",
+      "rect": [
+        59,
+        24,
+        73,
+        40
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-bunny-idle",
+    "file": "images/ansimuz-sv-bunny-idle.png",
+    "width": 20,
+    "height": 38,
+    "colors": 13,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "character",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Sprites/sunny-bunny/PNG/layers/idle/_0000_Layer-1.png",
+      "rect": [
+        4,
+        4,
+        20,
+        38
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-day-tiles-m",
+    "file": "images/ansimuz-sv-day-tiles-m.png",
+    "width": 112,
+    "height": 112,
+    "colors": 13,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/Day-Platformer/PNG/tileset.png",
+      "rect": [
+        192,
+        0,
+        112,
+        112
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-day-trees",
+    "file": "images/ansimuz-sv-day-trees.png",
+    "width": 144,
+    "height": 130,
+    "colors": 6,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/Day-Platformer/PNG/trees.png",
+      "rect": [
+        0,
+        0,
+        144,
+        130
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-forest-road",
+    "file": "images/ansimuz-sv-forest-road.png",
+    "width": 240,
+    "height": 224,
+    "colors": 15,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/forest-road-background/PNG/front.png",
+      "rect": [
+        0,
+        0,
+        240,
+        224
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-froggy-taunt",
+    "file": "images/ansimuz-sv-froggy-taunt.png",
+    "width": 39,
+    "height": 31,
+    "colors": 13,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Sprites/sunny-froggy/PNG/layers/taunting/_0000_Layer-1.png",
+      "rect": [
+        6,
+        11,
+        39,
+        31
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-fx-death",
+    "file": "images/ansimuz-sv-fx-death.png",
+    "width": 24,
+    "height": 25,
+    "colors": 2,
+    "size_bin": "small",
+    "palette_bin": "2-4",
+    "genre": "animation-frame",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Sprites/Grotto-escape-2-FX/PNG/sprites/enemy-death/_0002_Layer-3.png",
+      "rect": [
+        19,
+        24,
+        24,
+        25
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-fx-field",
+    "file": "images/ansimuz-sv-fx-field.png",
+    "width": 29,
+    "height": 29,
+    "colors": 4,
+    "size_bin": "small",
+    "palette_bin": "2-4",
+    "genre": "animation-frame",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Sprites/Grotto-escape-2-FX/PNG/sprites/energy-field/_0000_Layer-1.png",
+      "rect": [
+        9,
+        12,
+        29,
+        29
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-ghost-f0",
+    "file": "images/ansimuz-sv-ghost-f0.png",
+    "width": 30,
+    "height": 33,
+    "colors": 8,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Sprites/enemy-ghost/PNG/transparent-no-particles.png",
+      "rect": [
+        18,
+        15,
+        30,
+        33
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-lava-bg",
+    "file": "images/ansimuz-sv-lava-bg.png",
+    "width": 320,
+    "height": 240,
+    "colors": 10,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/lava-background/PNG/background.png",
+      "rect": [
+        56,
+        0,
+        320,
+        240
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-lava-tile",
+    "file": "images/ansimuz-sv-lava-tile.png",
+    "width": 48,
+    "height": 60,
+    "colors": 5,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/lava-background/PNG/lava-tile.png",
+      "rect": [
+        0,
+        0,
+        48,
+        60
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-mist-rocks",
+    "file": "images/ansimuz-sv-mist-rocks.png",
+    "width": 208,
+    "height": 224,
+    "colors": 4,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/mist-forest-background/layers/mist-forest-background-rocks.png",
+      "rect": [
+        0,
+        0,
+        208,
+        224
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-mist-trees",
+    "file": "images/ansimuz-sv-mist-trees.png",
+    "width": 160,
+    "height": 224,
+    "colors": 2,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/mist-forest-background/layers/mist-forest-background-back-trees.png",
+      "rect": [
+        0,
+        0,
+        160,
+        224
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-modular-m",
+    "file": "images/ansimuz-sv-modular-m.png",
+    "width": 128,
+    "height": 128,
+    "colors": 8,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/Modular-tileset/layers/modular-tileset.png",
+      "rect": [
+        240,
+        144,
+        128,
+        128
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-modular-tiles",
+    "file": "images/ansimuz-sv-modular-tiles.png",
+    "width": 320,
+    "height": 272,
+    "colors": 47,
+    "size_bin": "large",
+    "palette_bin": "17-64",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/Modular-tileset/layers/modular-tileset.png",
+      "rect": [
+        0,
+        0,
+        320,
+        272
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-mushroom-walk",
+    "file": "images/ansimuz-sv-mushroom-walk.png",
+    "width": 23,
+    "height": 26,
+    "colors": 9,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Sprites/sunny-mushroom/PNG/sprites/walking/0__0000_Layer-1.png",
+      "rect": [
+        0,
+        0,
+        23,
+        26
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-rock-tiles",
+    "file": "images/ansimuz-sv-rock-tiles.png",
+    "width": 128,
+    "height": 64,
+    "colors": 42,
+    "size_bin": "medium",
+    "palette_bin": "17-64",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/Rocks-Textures/PNG/tiles/all-rock-tiles.png",
+      "rect": [
+        0,
+        0,
+        128,
+        64
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-rocky-bg",
+    "file": "images/ansimuz-sv-rocky-bg.png",
+    "width": 320,
+    "height": 192,
+    "colors": 10,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "dithered",
+      "opaque"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/Rocky-Tileset/PNG/layers/rocky-tileset-background.png",
+      "rect": [
+        0,
+        0,
+        320,
+        192
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-sunny-dragon",
+    "file": "images/ansimuz-sv-sunny-dragon.png",
+    "width": 164,
+    "height": 108,
+    "colors": 14,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Sprites/sunny-dragon/PNG/sprites/_0000_Layer-1.png",
+      "rect": [
+        13,
+        44,
+        164,
+        108
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-sunny-hills",
+    "file": "images/ansimuz-sv-sunny-hills.png",
+    "width": 256,
+    "height": 224,
+    "colors": 8,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/sunny-rocky-mountains/PNG/sunny-mountains-hills.png",
+      "rect": [
+        0,
+        0,
+        256,
+        224
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-sv-vegetation",
+    "file": "images/ansimuz-sv-vegetation.png",
+    "width": 112,
+    "height": 102,
+    "colors": 3,
+    "size_bin": "medium",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Sideview Fantasy Patreon Collection",
+    "author": "ansimuz",
+    "source_url": "https://opengameart.org/content/sideview-fantasy-patreon-collection",
+    "file_in_source": {
+      "file": "Environments/colorful-tileset/PNG/layers/back-vegetation.png",
+      "rect": [
+        0,
+        0,
+        112,
+        102
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-warped-drone",
+    "file": "images/ansimuz-warped-drone.png",
+    "width": 36,
+    "height": 49,
+    "colors": 5,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Warped City",
+    "author": "ansimuz",
+    "source_url": "https://ansimuz.itch.io/warped-city",
+    "file_in_source": {
+      "file": "SPRITES/misc/drone/drone-1.png",
+      "rect": [
+        12,
+        3,
+        36,
+        49
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-warped-explosion",
+    "file": "images/ansimuz-warped-explosion.png",
+    "width": 50,
+    "height": 48,
+    "colors": 3,
+    "size_bin": "medium",
+    "palette_bin": "2-4",
+    "genre": "animation-frame",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Warped City",
+    "author": "ansimuz",
+    "source_url": "https://ansimuz.itch.io/warped-city",
+    "file_in_source": {
+      "file": "SPRITES/misc/enemy-explosion/enemy-explosion-3.png",
+      "rect": [
+        1,
+        3,
+        50,
+        48
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-warped-monitor",
+    "file": "images/ansimuz-warped-monitor.png",
+    "width": 21,
+    "height": 18,
+    "colors": 6,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "ui",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Warped City",
+    "author": "ansimuz",
+    "source_url": "https://ansimuz.itch.io/warped-city",
+    "file_in_source": {
+      "file": "ENVIRONMENT/props/monitorface/monitor-face-1.png",
+      "rect": [
+        0,
+        0,
+        21,
+        18
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-warped-near-bg",
+    "file": "images/ansimuz-warped-near-bg.png",
+    "width": 128,
+    "height": 128,
+    "colors": 9,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Warped City",
+    "author": "ansimuz",
+    "source_url": "https://ansimuz.itch.io/warped-city",
+    "file_in_source": {
+      "file": "ENVIRONMENT/background/near-buildings-bg.png",
+      "rect": [
+        0,
+        81,
+        128,
+        128
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-warped-player",
+    "file": "images/ansimuz-warped-player.png",
+    "width": 23,
+    "height": 47,
+    "colors": 13,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "character",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Warped City",
+    "author": "ansimuz",
+    "source_url": "https://ansimuz.itch.io/warped-city",
+    "file_in_source": {
+      "file": "SPRITES/player/idle/idle-1.png",
+      "rect": [
+        27,
+        20,
+        23,
+        47
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-warped-police",
+    "file": "images/ansimuz-warped-police.png",
+    "width": 163,
+    "height": 60,
+    "colors": 15,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Warped City",
+    "author": "ansimuz",
+    "source_url": "https://ansimuz.itch.io/warped-city",
+    "file_in_source": {
+      "file": "SPRITES/vehicles/v-police.png",
+      "rect": [
+        0,
+        0,
+        163,
+        60
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "ansimuz-warped-skyline",
+    "file": "images/ansimuz-warped-skyline.png",
+    "width": 128,
+    "height": 240,
+    "colors": 13,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "dithered",
+      "opaque"
+    ],
+    "source": "Warped City",
+    "author": "ansimuz",
+    "source_url": "https://ansimuz.itch.io/warped-city",
+    "file_in_source": {
+      "file": "ENVIRONMENT/background/skyline-a.png",
+      "rect": [
+        0,
+        0,
+        128,
+        240
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "blarumyrran-face-0",
+    "file": "images/blarumyrran-face-0.png",
+    "width": 63,
+    "height": 79,
+    "colors": 4,
+    "size_bin": "medium",
+    "palette_bin": "2-4",
+    "genre": "portrait",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Faceset 2-bit",
+    "author": "Blarumyrran",
+    "source_url": "https://opengameart.org/content/faceset-2-bit",
+    "file_in_source": {
+      "file": "faceset_16.png",
+      "rect": [
+        4,
+        3,
+        63,
+        79
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "blarumyrran-face-2",
+    "file": "images/blarumyrran-face-2.png",
+    "width": 63,
+    "height": 79,
+    "colors": 4,
+    "size_bin": "medium",
+    "palette_bin": "2-4",
+    "genre": "portrait",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Faceset 2-bit",
+    "author": "Blarumyrran",
+    "source_url": "https://opengameart.org/content/faceset-2-bit",
+    "file_in_source": {
+      "file": "faceset_16.png",
+      "rect": [
+        146,
+        3,
+        63,
+        79
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "blarumyrran-face-4",
+    "file": "images/blarumyrran-face-4.png",
+    "width": 63,
+    "height": 79,
+    "colors": 4,
+    "size_bin": "medium",
+    "palette_bin": "2-4",
+    "genre": "portrait",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Faceset 2-bit",
+    "author": "Blarumyrran",
+    "source_url": "https://opengameart.org/content/faceset-2-bit",
+    "file_in_source": {
+      "file": "faceset_16.png",
+      "rect": [
+        288,
+        3,
+        63,
+        79
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "buch-doodle-r00c00",
+    "file": "images/buch-doodle-r00c00.png",
+    "width": 24,
+    "height": 32,
+    "colors": 4,
+    "size_bin": "small",
+    "palette_bin": "2-4",
+    "genre": "portrait",
+    "tags": [
+      "opaque"
+    ],
+    "source": "2-bit doodle people",
+    "author": "Buch",
+    "source_url": "https://opengameart.org/content/2-bit-doodle-people",
+    "file_in_source": {
+      "file": "2bit_faces.png",
+      "rect": [
+        0,
+        0,
+        24,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "buch-doodle-r01c02",
+    "file": "images/buch-doodle-r01c02.png",
+    "width": 24,
+    "height": 32,
+    "colors": 4,
+    "size_bin": "small",
+    "palette_bin": "2-4",
+    "genre": "portrait",
+    "tags": [
+      "opaque"
+    ],
+    "source": "2-bit doodle people",
+    "author": "Buch",
+    "source_url": "https://opengameart.org/content/2-bit-doodle-people",
+    "file_in_source": {
+      "file": "2bit_faces.png",
+      "rect": [
+        48,
+        32,
+        24,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "buch-doodle-r02c03",
+    "file": "images/buch-doodle-r02c03.png",
+    "width": 24,
+    "height": 32,
+    "colors": 4,
+    "size_bin": "small",
+    "palette_bin": "2-4",
+    "genre": "portrait",
+    "tags": [
+      "opaque"
+    ],
+    "source": "2-bit doodle people",
+    "author": "Buch",
+    "source_url": "https://opengameart.org/content/2-bit-doodle-people",
+    "file_in_source": {
+      "file": "2bit_faces.png",
+      "rect": [
+        72,
+        64,
+        24,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "buch-rpg-r00c00",
+    "file": "images/buch-rpg-r00c00.png",
+    "width": 32,
+    "height": 32,
+    "colors": 10,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "portrait",
+    "tags": [
+      "opaque"
+    ],
+    "source": "RPG portraits",
+    "author": "Buch",
+    "source_url": "https://opengameart.org/content/rpg-portraits",
+    "file_in_source": {
+      "file": "rpgportraits.png",
+      "rect": [
+        4,
+        4,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "buch-rpg-r02c02",
+    "file": "images/buch-rpg-r02c02.png",
+    "width": 32,
+    "height": 32,
+    "colors": 10,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "portrait",
+    "tags": [
+      "opaque"
+    ],
+    "source": "RPG portraits",
+    "author": "Buch",
+    "source_url": "https://opengameart.org/content/rpg-portraits",
+    "file_in_source": {
+      "file": "rpgportraits.png",
+      "rect": [
+        76,
+        76,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "cawfeecrow-neko",
+    "file": "images/cawfeecrow-neko.png",
+    "width": 144,
+    "height": 144,
+    "colors": 31,
+    "size_bin": "large",
+    "palette_bin": "17-64",
+    "genre": "portrait",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Nekomimi girl portrait",
+    "author": "cawfeecrow",
+    "source_url": "https://opengameart.org/content/nekomimi-girl-portrait",
+    "file_in_source": {
+      "file": "nekoportrait-expression1.png",
+      "rect": [
+        0,
+        0,
+        144,
+        144
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-church0",
+    "file": "images/dcss-church0.png",
+    "width": 32,
+    "height": 32,
+    "colors": 529,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "opaque"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "dngn/wall/church0.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-constricted",
+    "file": "images/dcss-constricted.png",
+    "width": 12,
+    "height": 11,
+    "colors": 29,
+    "size_bin": "tiny",
+    "palette_bin": "17-64",
+    "genre": "ui",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "misc/icons/constricted.png",
+      "rect": [
+        20,
+        0,
+        12,
+        11
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-demon-head-incubus",
+    "file": "images/dcss-demon-head-incubus.png",
+    "width": 12,
+    "height": 16,
+    "colors": 18,
+    "size_bin": "tiny",
+    "palette_bin": "17-64",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/panlord/demon_head_incubus.png",
+      "rect": [
+        5,
+        0,
+        12,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-ereshkigal",
+    "file": "images/dcss-ereshkigal.png",
+    "width": 32,
+    "height": 48,
+    "colors": 115,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "monster",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/unique/ereshkigal.png",
+      "rect": [
+        0,
+        0,
+        32,
+        48
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-fedhas",
+    "file": "images/dcss-fedhas.png",
+    "width": 32,
+    "height": 32,
+    "colors": 190,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "dngn/altars/fedhas.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-flesh-golem",
+    "file": "images/dcss-flesh-golem.png",
+    "width": 32,
+    "height": 32,
+    "colors": 405,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "monster",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/nonliving/flesh_golem.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-gem-gold",
+    "file": "images/dcss-gem-gold.png",
+    "width": 29,
+    "height": 29,
+    "colors": 14,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "item/wand/gem_gold.png",
+      "rect": [
+        2,
+        1,
+        29,
+        29
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-ghoul",
+    "file": "images/dcss-ghoul.png",
+    "width": 32,
+    "height": 32,
+    "colors": 188,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "monster",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/undead/ghoul.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-griffon",
+    "file": "images/dcss-griffon.png",
+    "width": 32,
+    "height": 32,
+    "colors": 388,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "monster",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/griffon.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-hand-axe2",
+    "file": "images/dcss-hand-axe2.png",
+    "width": 10,
+    "height": 17,
+    "colors": 24,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "player/hand1/hand_axe2.png",
+      "rect": [
+        0,
+        6,
+        10,
+        17
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-i-acquirement",
+    "file": "images/dcss-i-acquirement.png",
+    "width": 16,
+    "height": 16,
+    "colors": 13,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "item/scroll/i-acquirement.png",
+      "rect": [
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-i-flight",
+    "file": "images/dcss-i-flight.png",
+    "width": 15,
+    "height": 16,
+    "colors": 3,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "item/ring/i-flight.png",
+      "rect": [
+        17,
+        16,
+        15,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-i-staff-energy",
+    "file": "images/dcss-i-staff-energy.png",
+    "width": 16,
+    "height": 16,
+    "colors": 3,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "item/staff/i-staff_energy.png",
+      "rect": [
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-ignacio",
+    "file": "images/dcss-ignacio.png",
+    "width": 32,
+    "height": 32,
+    "colors": 371,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "character",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/unique/ignacio.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-lich",
+    "file": "images/dcss-lich.png",
+    "width": 32,
+    "height": 32,
+    "colors": 15,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/undead/lich.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-mace2",
+    "file": "images/dcss-mace2.png",
+    "width": 9,
+    "height": 18,
+    "colors": 25,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "player/hand1/mace2.png",
+      "rect": [
+        2,
+        4,
+        9,
+        18
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-missing-ghost",
+    "file": "images/dcss-missing-ghost.png",
+    "width": 25,
+    "height": 29,
+    "colors": 2,
+    "size_bin": "small",
+    "palette_bin": "2-4",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/undead/missing_ghost.png",
+      "rect": [
+        6,
+        0,
+        25,
+        29
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-mosaic0",
+    "file": "images/dcss-mosaic0.png",
+    "width": 32,
+    "height": 32,
+    "colors": 247,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "opaque"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "dngn/floor/mosaic0.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-naga-mage",
+    "file": "images/dcss-naga-mage.png",
+    "width": 32,
+    "height": 32,
+    "colors": 19,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "character",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/naga_mage.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-orb-of-destruction",
+    "file": "images/dcss-orb-of-destruction.png",
+    "width": 32,
+    "height": 32,
+    "colors": 488,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "ui",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "gui/spells/conjuration/orb_of_destruction.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-orc-knight",
+    "file": "images/dcss-orc-knight.png",
+    "width": 32,
+    "height": 32,
+    "colors": 21,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "character",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/orc_knight.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-orcish-idol",
+    "file": "images/dcss-orcish-idol.png",
+    "width": 32,
+    "height": 32,
+    "colors": 9,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "dngn/statues/orcish_idol.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-quicksilver-dragon",
+    "file": "images/dcss-quicksilver-dragon.png",
+    "width": 32,
+    "height": 32,
+    "colors": 281,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "monster",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/dragons/quicksilver_dragon.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-runed-door",
+    "file": "images/dcss-runed-door.png",
+    "width": 32,
+    "height": 32,
+    "colors": 540,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "opaque"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "dngn/doors/runed_door.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-scorpion",
+    "file": "images/dcss-scorpion.png",
+    "width": 32,
+    "height": 32,
+    "colors": 212,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "monster",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/animals/scorpion.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-shadow-fiend",
+    "file": "images/dcss-shadow-fiend.png",
+    "width": 32,
+    "height": 32,
+    "colors": 204,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "monster",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/demons/shadow_fiend.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-sphinx",
+    "file": "images/dcss-sphinx.png",
+    "width": 32,
+    "height": 32,
+    "colors": 20,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/sphinx.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-statue-elephant-jade",
+    "file": "images/dcss-statue-elephant-jade.png",
+    "width": 32,
+    "height": 32,
+    "colors": 393,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "dngn/vaults/statue_elephant_jade.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-stone",
+    "file": "images/dcss-stone.png",
+    "width": 17,
+    "height": 14,
+    "colors": 21,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "item/weapon/ranged/stone.png",
+      "rect": [
+        10,
+        8,
+        17,
+        14
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-strawberry",
+    "file": "images/dcss-strawberry.png",
+    "width": 29,
+    "height": 24,
+    "colors": 171,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "item",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "item/food/strawberry.png",
+      "rect": [
+        2,
+        4,
+        29,
+        24
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-tengu-warrior",
+    "file": "images/dcss-tengu-warrior.png",
+    "width": 32,
+    "height": 32,
+    "colors": 33,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "character",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/tengu_warrior.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dcss-treant",
+    "file": "images/dcss-treant.png",
+    "width": 32,
+    "height": 32,
+    "colors": 245,
+    "size_bin": "small",
+    "palette_bin": "65+",
+    "genre": "monster",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Dungeon Crawl Stone Soup tiles (Nov-2015 release)",
+    "author": "DCSS tile artists (see ARTISTS.md)",
+    "source_url": "https://github.com/crawl/tiles",
+    "file_in_source": {
+      "file": "mon/fungi_plants/treant.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-l-01",
+    "file": "images/denzi-crop-l-01.png",
+    "width": 256,
+    "height": 192,
+    "colors": 98,
+    "size_bin": "large",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        384,
+        160,
+        256,
+        192
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-l-02",
+    "file": "images/denzi-crop-l-02.png",
+    "width": 256,
+    "height": 192,
+    "colors": 93,
+    "size_bin": "large",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        0,
+        160,
+        256,
+        192
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-m-01",
+    "file": "images/denzi-crop-m-01.png",
+    "width": 96,
+    "height": 96,
+    "colors": 73,
+    "size_bin": "medium",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        640,
+        224,
+        96,
+        96
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-m-02",
+    "file": "images/denzi-crop-m-02.png",
+    "width": 96,
+    "height": 96,
+    "colors": 61,
+    "size_bin": "medium",
+    "palette_bin": "17-64",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        864,
+        224,
+        96,
+        96
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-m-03",
+    "file": "images/denzi-crop-m-03.png",
+    "width": 96,
+    "height": 96,
+    "colors": 53,
+    "size_bin": "medium",
+    "palette_bin": "17-64",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        768,
+        192,
+        96,
+        96
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-m-04",
+    "file": "images/denzi-crop-m-04.png",
+    "width": 96,
+    "height": 96,
+    "colors": 53,
+    "size_bin": "medium",
+    "palette_bin": "17-64",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        640,
+        1152,
+        96,
+        96
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-s-01",
+    "file": "images/denzi-crop-s-01.png",
+    "width": 128,
+    "height": 64,
+    "colors": 53,
+    "size_bin": "medium",
+    "palette_bin": "17-64",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        704,
+        896,
+        128,
+        64
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-s-02",
+    "file": "images/denzi-crop-s-02.png",
+    "width": 128,
+    "height": 64,
+    "colors": 44,
+    "size_bin": "medium",
+    "palette_bin": "17-64",
+    "genre": "tile",
+    "tags": [
+      "dithered",
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        576,
+        1024,
+        128,
+        64
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-xl-01",
+    "file": "images/denzi-crop-xl-01.png",
+    "width": 160,
+    "height": 160,
+    "colors": 70,
+    "size_bin": "large",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        0,
+        896,
+        160,
+        160
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-crop-xl-02",
+    "file": "images/denzi-crop-xl-02.png",
+    "width": 160,
+    "height": 160,
+    "colors": 69,
+    "size_bin": "large",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "opaque"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        832,
+        1088,
+        160,
+        160
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-monster-crop-01",
+    "file": "images/denzi-monster-crop-01.png",
+    "width": 96,
+    "height": 96,
+    "colors": 73,
+    "size_bin": "medium",
+    "palette_bin": "65+",
+    "genre": "monster",
+    "tags": [
+      "anti-aliased",
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x48_monsters.png",
+      "rect": [
+        32,
+        192,
+        96,
+        96
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-monster-r02c06",
+    "file": "images/denzi-monster-r02c06.png",
+    "width": 32,
+    "height": 48,
+    "colors": 18,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x48_monsters.png",
+      "rect": [
+        192,
+        96,
+        32,
+        48
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-monster-r04c01",
+    "file": "images/denzi-monster-r04c01.png",
+    "width": 32,
+    "height": 48,
+    "colors": 29,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x48_monsters.png",
+      "rect": [
+        32,
+        192,
+        32,
+        48
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-monster-r04c08",
+    "file": "images/denzi-monster-r04c08.png",
+    "width": 32,
+    "height": 48,
+    "colors": 25,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x48_monsters.png",
+      "rect": [
+        256,
+        192,
+        32,
+        48
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-monster-r05c03",
+    "file": "images/denzi-monster-r05c03.png",
+    "width": 32,
+    "height": 48,
+    "colors": 36,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x48_monsters.png",
+      "rect": [
+        96,
+        240,
+        32,
+        48
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-monster-r09c05",
+    "file": "images/denzi-monster-r09c05.png",
+    "width": 32,
+    "height": 48,
+    "colors": 26,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x48_monsters.png",
+      "rect": [
+        160,
+        432,
+        32,
+        48
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-monster-r10c02",
+    "file": "images/denzi-monster-r10c02.png",
+    "width": 32,
+    "height": 48,
+    "colors": 20,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x48_monsters.png",
+      "rect": [
+        64,
+        480,
+        32,
+        48
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-tile-r00c01",
+    "file": "images/denzi-tile-r00c01.png",
+    "width": 32,
+    "height": 32,
+    "colors": 14,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-tile-r03c25",
+    "file": "images/denzi-tile-r03c25.png",
+    "width": 32,
+    "height": 32,
+    "colors": 4,
+    "size_bin": "small",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "dithered",
+      "opaque"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        800,
+        96,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-tile-r19c02",
+    "file": "images/denzi-tile-r19c02.png",
+    "width": 32,
+    "height": 32,
+    "colors": 11,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        64,
+        608,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-tile-r22c29",
+    "file": "images/denzi-tile-r22c29.png",
+    "width": 32,
+    "height": 32,
+    "colors": 26,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        928,
+        704,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "denzi-tile-r38c31",
+    "file": "images/denzi-tile-r38c31.png",
+    "width": 32,
+    "height": 32,
+    "colors": 10,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Denzi's public domain art",
+    "author": "Denzi",
+    "source_url": "https://opengameart.org/content/denzis-public-domain-art",
+    "file_in_source": {
+      "file": "DENZI_CC0_32x32_tileset.png",
+      "rect": [
+        992,
+        1216,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dezra-iso-r03c02",
+    "file": "images/dezra-iso-r03c02.png",
+    "width": 13,
+    "height": 19,
+    "colors": 9,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "isometric",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Isometric classic hero tiles 32x32",
+    "author": "DezrasDragons",
+    "source_url": "https://opengameart.org/content/isometric-classic-hero-tiles-32x32",
+    "file_in_source": {
+      "file": "isometric_hero_dezrasdragons.png",
+      "rect": [
+        77,
+        113,
+        13,
+        19
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dezra-iso-r08c11",
+    "file": "images/dezra-iso-r08c11.png",
+    "width": 26,
+    "height": 22,
+    "colors": 17,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "isometric",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Isometric classic hero tiles 32x32",
+    "author": "DezrasDragons",
+    "source_url": "https://opengameart.org/content/isometric-classic-hero-tiles-32x32",
+    "file_in_source": {
+      "file": "isometric_hero_dezrasdragons.png",
+      "rect": [
+        364,
+        270,
+        26,
+        22
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dezra-iso-r10c10",
+    "file": "images/dezra-iso-r10c10.png",
+    "width": 26,
+    "height": 28,
+    "colors": 17,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "isometric",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Isometric classic hero tiles 32x32",
+    "author": "DezrasDragons",
+    "source_url": "https://opengameart.org/content/isometric-classic-hero-tiles-32x32",
+    "file_in_source": {
+      "file": "isometric_hero_dezrasdragons.png",
+      "rect": [
+        332,
+        331,
+        26,
+        28
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dezra-iso-r12c13",
+    "file": "images/dezra-iso-r12c13.png",
+    "width": 24,
+    "height": 23,
+    "colors": 15,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "isometric",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Isometric classic hero tiles 32x32",
+    "author": "DezrasDragons",
+    "source_url": "https://opengameart.org/content/isometric-classic-hero-tiles-32x32",
+    "file_in_source": {
+      "file": "isometric_hero_dezrasdragons.png",
+      "rect": [
+        434,
+        401,
+        24,
+        23
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "dezra-iso-r14c12",
+    "file": "images/dezra-iso-r14c12.png",
+    "width": 22,
+    "height": 27,
+    "colors": 7,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Isometric classic hero tiles 32x32",
+    "author": "DezrasDragons",
+    "source_url": "https://opengameart.org/content/isometric-classic-hero-tiles-32x32",
+    "file_in_source": {
+      "file": "isometric_hero_dezrasdragons.png",
+      "rect": [
+        403,
+        463,
+        22,
+        27
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "efilheim-everface-r00c00",
+    "file": "images/efilheim-everface-r00c00.png",
+    "width": 24,
+    "height": 24,
+    "colors": 10,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "portrait",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Everface",
+    "author": "efilheim",
+    "source_url": "https://opengameart.org/content/everface",
+    "file_in_source": {
+      "file": "everface1.0.png",
+      "rect": [
+        0,
+        0,
+        24,
+        24
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "efilheim-everface-r00c11",
+    "file": "images/efilheim-everface-r00c11.png",
+    "width": 24,
+    "height": 24,
+    "colors": 8,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "portrait",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Everface",
+    "author": "efilheim",
+    "source_url": "https://opengameart.org/content/everface",
+    "file_in_source": {
+      "file": "everface1.0.png",
+      "rect": [
+        264,
+        0,
+        24,
+        24
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "efilheim-everface-r00c15",
+    "file": "images/efilheim-everface-r00c15.png",
+    "width": 24,
+    "height": 24,
+    "colors": 13,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "portrait",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Everface",
+    "author": "efilheim",
+    "source_url": "https://opengameart.org/content/everface",
+    "file_in_source": {
+      "file": "everface1.0.png",
+      "rect": [
+        360,
+        0,
+        24,
+        24
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "fisherg-city-mid",
+    "file": "images/fisherg-city-mid.png",
+    "width": 160,
+    "height": 144,
+    "colors": 2,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Parallax City Night (4 colors)",
+    "author": "fisherg",
+    "source_url": "https://opengameart.org/content/parallax-city-night-4-colors",
+    "file_in_source": {
+      "file": "sCityMid.png",
+      "rect": [
+        0,
+        0,
+        160,
+        144
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "fisherg-city-mockup",
+    "file": "images/fisherg-city-mockup.png",
+    "width": 160,
+    "height": 144,
+    "colors": 4,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Parallax City Night (4 colors)",
+    "author": "fisherg",
+    "source_url": "https://opengameart.org/content/parallax-city-night-4-colors",
+    "file_in_source": {
+      "file": "sMockup.png",
+      "rect": [
+        0,
+        0,
+        160,
+        144
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": "",
+    "note": "source is a 6x nearest upscale; downscaled by 6"
+  },
+  {
+    "id": "jetrel-frogatto-l",
+    "file": "images/jetrel-frogatto-l.png",
+    "width": 256,
+    "height": 256,
+    "colors": 85,
+    "size_bin": "large",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "opaque"
+    ],
+    "source": "Old Frogatto tile art",
+    "author": "Jetrel",
+    "source_url": "https://opengameart.org/content/old-frogatto-tile-art",
+    "file_in_source": {
+      "file": "dirt-tiles.png",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "jetrel-frogatto-m",
+    "file": "images/jetrel-frogatto-m.png",
+    "width": 192,
+    "height": 192,
+    "colors": 79,
+    "size_bin": "large",
+    "palette_bin": "65+",
+    "genre": "tile",
+    "tags": [
+      "anti-aliased",
+      "opaque"
+    ],
+    "source": "Old Frogatto tile art",
+    "author": "Jetrel",
+    "source_url": "https://opengameart.org/content/old-frogatto-tile-art",
+    "file_in_source": {
+      "file": "dirt-tiles.png",
+      "rect": [
+        192,
+        0,
+        192,
+        192
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "jetrel-jpiso-crop",
+    "file": "images/jetrel-jpiso-crop.png",
+    "width": 112,
+    "height": 96,
+    "colors": 24,
+    "size_bin": "medium",
+    "palette_bin": "17-64",
+    "genre": "isometric",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Japanese buildings isometric strategy game mockup",
+    "author": "Jetrel",
+    "source_url": "https://opengameart.org/content/japanese-buildings-isometric-strategy-game-mockup",
+    "file_in_source": {
+      "file": "jpisotbs.png",
+      "rect": [
+        100,
+        50,
+        112,
+        96
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "jetrel-jpiso-full",
+    "file": "images/jetrel-jpiso-full.png",
+    "width": 300,
+    "height": 200,
+    "colors": 35,
+    "size_bin": "large",
+    "palette_bin": "17-64",
+    "genre": "isometric",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Japanese buildings isometric strategy game mockup",
+    "author": "Jetrel",
+    "source_url": "https://opengameart.org/content/japanese-buildings-isometric-strategy-game-mockup",
+    "file_in_source": {
+      "file": "jpisotbs.png",
+      "rect": [
+        0,
+        0,
+        300,
+        200
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-1bit-r00c01",
+    "file": "images/kenney-1bit-r00c01.png",
+    "width": 16,
+    "height": 16,
+    "colors": 2,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney 1-Bit Pack",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/1-bit-pack",
+    "file_in_source": {
+      "file": "Tilesheet/colored_packed.png",
+      "rect": [
+        16,
+        0,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-1bit-r07c18",
+    "file": "images/kenney-1bit-r07c18.png",
+    "width": 16,
+    "height": 16,
+    "colors": 2,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney 1-Bit Pack",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/1-bit-pack",
+    "file_in_source": {
+      "file": "Tilesheet/colored_packed.png",
+      "rect": [
+        288,
+        112,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-1bit-r14c31",
+    "file": "images/kenney-1bit-r14c31.png",
+    "width": 16,
+    "height": 16,
+    "colors": 2,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney 1-Bit Pack",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/1-bit-pack",
+    "file_in_source": {
+      "file": "Tilesheet/colored_packed.png",
+      "rect": [
+        496,
+        224,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-1bit-r21c47",
+    "file": "images/kenney-1bit-r21c47.png",
+    "width": 16,
+    "height": 16,
+    "colors": 2,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney 1-Bit Pack",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/1-bit-pack",
+    "file_in_source": {
+      "file": "Tilesheet/colored_packed.png",
+      "rect": [
+        752,
+        336,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-micro-r00c00",
+    "file": "images/kenney-micro-r00c00.png",
+    "width": 8,
+    "height": 8,
+    "colors": 4,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Micro Roguelike",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/micro-roguelike",
+    "file_in_source": {
+      "file": "Tilemap/colored_tilemap_packed.png",
+      "rect": [
+        0,
+        0,
+        8,
+        8
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-micro-r03c03",
+    "file": "images/kenney-micro-r03c03.png",
+    "width": 8,
+    "height": 8,
+    "colors": 2,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Micro Roguelike",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/micro-roguelike",
+    "file_in_source": {
+      "file": "Tilemap/colored_tilemap_packed.png",
+      "rect": [
+        24,
+        24,
+        8,
+        8
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-micro-r04c12",
+    "file": "images/kenney-micro-r04c12.png",
+    "width": 8,
+    "height": 8,
+    "colors": 5,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Micro Roguelike",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/micro-roguelike",
+    "file_in_source": {
+      "file": "Tilemap/colored_tilemap_packed.png",
+      "rect": [
+        96,
+        32,
+        8,
+        8
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-micro-r06c13",
+    "file": "images/kenney-micro-r06c13.png",
+    "width": 8,
+    "height": 8,
+    "colors": 4,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Micro Roguelike",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/micro-roguelike",
+    "file_in_source": {
+      "file": "Tilemap/colored_tilemap_packed.png",
+      "rect": [
+        104,
+        48,
+        8,
+        8
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-micro-r09c12",
+    "file": "images/kenney-micro-r09c12.png",
+    "width": 8,
+    "height": 8,
+    "colors": 4,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Micro Roguelike",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/micro-roguelike",
+    "file_in_source": {
+      "file": "Tilemap/colored_tilemap_packed.png",
+      "rect": [
+        96,
+        72,
+        8,
+        8
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-pico8city-r00c04",
+    "file": "images/kenney-pico8city-r00c04.png",
+    "width": 8,
+    "height": 8,
+    "colors": 3,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Pico-8 City",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/pico-8-city",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        32,
+        0,
+        8,
+        8
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-pico8city-r12c13",
+    "file": "images/kenney-pico8city-r12c13.png",
+    "width": 8,
+    "height": 8,
+    "colors": 6,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney Pico-8 City",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/pico-8-city",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        104,
+        96,
+        8,
+        8
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-pico8city-r14c23",
+    "file": "images/kenney-pico8city-r14c23.png",
+    "width": 8,
+    "height": 8,
+    "colors": 3,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney Pico-8 City",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/pico-8-city",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        184,
+        112,
+        8,
+        8
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-pp-char-0000",
+    "file": "images/kenney-pp-char-0000.png",
+    "width": 24,
+    "height": 24,
+    "colors": 7,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "character",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney Pixel Platformer",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/pixel-platformer",
+    "file_in_source": {
+      "file": "kenney-pp-char-0000.png",
+      "rect": [
+        0,
+        0,
+        24,
+        24
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-pp-tile-0000",
+    "file": "images/kenney-pp-tile-0000.png",
+    "width": 18,
+    "height": 18,
+    "colors": 6,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Pixel Platformer",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/pixel-platformer",
+    "file_in_source": {
+      "file": "kenney-pp-tile-0000.png",
+      "rect": [
+        0,
+        0,
+        18,
+        18
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-rts-tile-0129",
+    "file": "images/kenney-rts-tile-0129.png",
+    "width": 16,
+    "height": 16,
+    "colors": 9,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney RTS Medieval (Pixel)",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/medieval-rts",
+    "file_in_source": {
+      "file": "kenney-rts-tile-0129.png",
+      "rect": [
+        0,
+        0,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-shmup-ship-0000",
+    "file": "images/kenney-shmup-ship-0000.png",
+    "width": 32,
+    "height": 32,
+    "colors": 6,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "item",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney Pixel Shmup",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/pixel-shmup",
+    "file_in_source": {
+      "file": "kenney-shmup-ship-ship_0000.png",
+      "rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-shmup-tile-0107",
+    "file": "images/kenney-shmup-tile-0107.png",
+    "width": 16,
+    "height": 16,
+    "colors": 5,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Pixel Shmup",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/pixel-shmup",
+    "file_in_source": {
+      "file": "kenney-shmup-tile-0107.png",
+      "rect": [
+        0,
+        0,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-tinydungeon-r00c02",
+    "file": "images/kenney-tinydungeon-r00c02.png",
+    "width": 16,
+    "height": 16,
+    "colors": 5,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Tiny Dungeon",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/tiny-dungeon",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        32,
+        0,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-tinydungeon-r00c03",
+    "file": "images/kenney-tinydungeon-r00c03.png",
+    "width": 16,
+    "height": 16,
+    "colors": 4,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Tiny Dungeon",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/tiny-dungeon",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        48,
+        0,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-tinydungeon-r02c02",
+    "file": "images/kenney-tinydungeon-r02c02.png",
+    "width": 16,
+    "height": 16,
+    "colors": 7,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Tiny Dungeon",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/tiny-dungeon",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        32,
+        32,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-tinydungeon-r04c06",
+    "file": "images/kenney-tinydungeon-r04c06.png",
+    "width": 16,
+    "height": 16,
+    "colors": 5,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney Tiny Dungeon",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/tiny-dungeon",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        96,
+        64,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-tinydungeon-r04c11",
+    "file": "images/kenney-tinydungeon-r04c11.png",
+    "width": 16,
+    "height": 16,
+    "colors": 4,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Kenney Tiny Dungeon",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/tiny-dungeon",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        176,
+        64,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-tinydungeon-r07c06",
+    "file": "images/kenney-tinydungeon-r07c06.png",
+    "width": 16,
+    "height": 16,
+    "colors": 8,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney Tiny Dungeon",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/tiny-dungeon",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        96,
+        112,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-tinydungeon-r09c04",
+    "file": "images/kenney-tinydungeon-r09c04.png",
+    "width": 16,
+    "height": 16,
+    "colors": 8,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney Tiny Dungeon",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/tiny-dungeon",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        64,
+        144,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-tinydungeon-r10c04",
+    "file": "images/kenney-tinydungeon-r10c04.png",
+    "width": 16,
+    "height": 16,
+    "colors": 4,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney Tiny Dungeon",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/tiny-dungeon",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        64,
+        160,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "kenney-tinydungeon-r10c11",
+    "file": "images/kenney-tinydungeon-r10c11.png",
+    "width": 16,
+    "height": 16,
+    "colors": 6,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Kenney Tiny Dungeon",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/tiny-dungeon",
+    "file_in_source": {
+      "file": "Tilemap/tilemap_packed.png",
+      "rect": [
+        176,
+        160,
+        16,
+        16
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "luizmelo-flyingeye-flight-f0",
+    "file": "images/luizmelo-flyingeye-flight-f0.png",
+    "width": 43,
+    "height": 33,
+    "colors": 8,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Monsters Creatures Fantasy",
+    "author": "LuizMelo",
+    "source_url": "https://luizmelo.itch.io/monsters-creatures-fantasy",
+    "file_in_source": {
+      "file": "Flying eye/Flight.png",
+      "rect": [
+        56,
+        60,
+        43,
+        33
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "luizmelo-goblin-attack-f6",
+    "file": "images/luizmelo-goblin-attack-f6.png",
+    "width": 90,
+    "height": 48,
+    "colors": 17,
+    "size_bin": "medium",
+    "palette_bin": "17-64",
+    "genre": "animation-frame",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Monsters Creatures Fantasy",
+    "author": "LuizMelo",
+    "source_url": "https://luizmelo.itch.io/monsters-creatures-fantasy",
+    "file_in_source": {
+      "file": "Goblin/Attack.png",
+      "rect": [
+        930,
+        54,
+        90,
+        48
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "luizmelo-goblin-idle-f0",
+    "file": "images/luizmelo-goblin-idle-f0.png",
+    "width": 35,
+    "height": 38,
+    "colors": 16,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "monster",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Monsters Creatures Fantasy",
+    "author": "LuizMelo",
+    "source_url": "https://luizmelo.itch.io/monsters-creatures-fantasy",
+    "file_in_source": {
+      "file": "Goblin/Idle.png",
+      "rect": [
+        57,
+        64,
+        35,
+        38
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "luizmelo-skeleton-attack-f6",
+    "file": "images/luizmelo-skeleton-attack-f6.png",
+    "width": 82,
+    "height": 55,
+    "colors": 16,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "animation-frame",
+    "tags": [
+      "transparent"
+    ],
+    "source": "Monsters Creatures Fantasy",
+    "author": "LuizMelo",
+    "source_url": "https://luizmelo.itch.io/monsters-creatures-fantasy",
+    "file_in_source": {
+      "file": "Skeleton/Attack.png",
+      "rect": [
+        967,
+        47,
+        82,
+        55
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "marcavis-frogatto-layer1",
+    "file": "images/marcavis-frogatto-layer1.png",
+    "width": 297,
+    "height": 60,
+    "colors": 24,
+    "size_bin": "large",
+    "palette_bin": "17-64",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Old Frogatto parallax layers",
+    "author": "marcavis",
+    "source_url": "https://opengameart.org/content/old-frogatto-parallax-layers",
+    "file_in_source": {
+      "file": "forestbg-layer1.png",
+      "rect": [
+        0,
+        0,
+        297,
+        60
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "marcavis-frogatto-layer10",
+    "file": "images/marcavis-frogatto-layer10.png",
+    "width": 297,
+    "height": 109,
+    "colors": 4,
+    "size_bin": "large",
+    "palette_bin": "2-4",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Old Frogatto parallax layers",
+    "author": "marcavis",
+    "source_url": "https://opengameart.org/content/old-frogatto-parallax-layers",
+    "file_in_source": {
+      "file": "forestbg-layer10.png",
+      "rect": [
+        0,
+        0,
+        297,
+        109
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "marcavis-frogatto-layer5",
+    "file": "images/marcavis-frogatto-layer5.png",
+    "width": 128,
+    "height": 128,
+    "colors": 13,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Old Frogatto parallax layers",
+    "author": "marcavis",
+    "source_url": "https://opengameart.org/content/old-frogatto-parallax-layers",
+    "file_in_source": {
+      "file": "forestbg-layer5.png",
+      "rect": [
+        0,
+        121,
+        128,
+        128
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "marcavis-frogatto-layer7",
+    "file": "images/marcavis-frogatto-layer7.png",
+    "width": 297,
+    "height": 147,
+    "colors": 25,
+    "size_bin": "large",
+    "palette_bin": "17-64",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Old Frogatto parallax layers",
+    "author": "marcavis",
+    "source_url": "https://opengameart.org/content/old-frogatto-parallax-layers",
+    "file_in_source": {
+      "file": "forestbg-layer7.png",
+      "rect": [
+        0,
+        0,
+        297,
+        147
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "marcavis-frogatto-trees",
+    "file": "images/marcavis-frogatto-trees.png",
+    "width": 256,
+    "height": 320,
+    "colors": 58,
+    "size_bin": "large",
+    "palette_bin": "17-64",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Old Frogatto parallax layers",
+    "author": "marcavis",
+    "source_url": "https://opengameart.org/content/old-frogatto-parallax-layers",
+    "file_in_source": {
+      "file": "bg-trees1.png",
+      "rect": [
+        0,
+        96,
+        256,
+        320
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "phoenix-portrait-01",
+    "file": "images/phoenix-portrait-01.png",
+    "width": 20,
+    "height": 20,
+    "colors": 11,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "portrait",
+    "tags": [
+      "transparent"
+    ],
+    "source": "25 Portrait Pixel Art pack 1",
+    "author": "phoenix1291",
+    "source_url": "https://opengameart.org/content/25-portrait-pixel-art-pack1",
+    "file_in_source": {
+      "file": "Pixel_art_Portrait_1.png",
+      "rect": [
+        0,
+        0,
+        20,
+        20
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "phoenix-portrait-08",
+    "file": "images/phoenix-portrait-08.png",
+    "width": 25,
+    "height": 25,
+    "colors": 20,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "portrait",
+    "tags": [
+      "transparent"
+    ],
+    "source": "25 Portrait Pixel Art pack 1",
+    "author": "phoenix1291",
+    "source_url": "https://opengameart.org/content/25-portrait-pixel-art-pack1",
+    "file_in_source": {
+      "file": "Pixel_art_Portrait_8.png",
+      "rect": [
+        0,
+        0,
+        25,
+        25
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "phoenix-portrait-14",
+    "file": "images/phoenix-portrait-14.png",
+    "width": 25,
+    "height": 25,
+    "colors": 20,
+    "size_bin": "small",
+    "palette_bin": "17-64",
+    "genre": "portrait",
+    "tags": [
+      "transparent"
+    ],
+    "source": "25 Portrait Pixel Art pack 1",
+    "author": "phoenix1291",
+    "source_url": "https://opengameart.org/content/25-portrait-pixel-art-pack1",
+    "file_in_source": {
+      "file": "Pixel_art_Portrait_14.png",
+      "rect": [
+        0,
+        0,
+        25,
+        25
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "phoenix-portrait-19",
+    "file": "images/phoenix-portrait-19.png",
+    "width": 20,
+    "height": 20,
+    "colors": 11,
+    "size_bin": "small",
+    "palette_bin": "5-16",
+    "genre": "portrait",
+    "tags": [
+      "transparent"
+    ],
+    "source": "25 Portrait Pixel Art pack 1",
+    "author": "phoenix1291",
+    "source_url": "https://opengameart.org/content/25-portrait-pixel-art-pack1",
+    "file_in_source": {
+      "file": "Pixel_art_Portrait_19.png",
+      "rect": [
+        0,
+        0,
+        20,
+        20
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "surt-monsterboy-a",
+    "file": "images/surt-monsterboy-a.png",
+    "width": 320,
+    "height": 240,
+    "colors": 14,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Monster Boy in Wonder World mockup assets",
+    "author": "surt",
+    "source_url": "https://opengameart.org/content/monsterboy-in-wonder-world-mockup-assets",
+    "file_in_source": {
+      "file": "monsterboy_0.png",
+      "rect": [
+        0,
+        0,
+        320,
+        240
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "surt-monsterboy-b",
+    "file": "images/surt-monsterboy-b.png",
+    "width": 320,
+    "height": 240,
+    "colors": 15,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Monster Boy in Wonder World mockup assets",
+    "author": "surt",
+    "source_url": "https://opengameart.org/content/monsterboy-in-wonder-world-mockup-assets",
+    "file_in_source": {
+      "file": "monsterboy_0.png",
+      "rect": [
+        320,
+        360,
+        320,
+        240
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "surt-monsterboy-c",
+    "file": "images/surt-monsterboy-c.png",
+    "width": 320,
+    "height": 240,
+    "colors": 15,
+    "size_bin": "large",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "dithered",
+      "opaque"
+    ],
+    "source": "Monster Boy in Wonder World mockup assets",
+    "author": "surt",
+    "source_url": "https://opengameart.org/content/monsterboy-in-wonder-world-mockup-assets",
+    "file_in_source": {
+      "file": "monsterboy_0.png",
+      "rect": [
+        0,
+        720,
+        320,
+        240
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "surt-monsterboy-m1",
+    "file": "images/surt-monsterboy-m1.png",
+    "width": 128,
+    "height": 96,
+    "colors": 11,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Monster Boy in Wonder World mockup assets",
+    "author": "surt",
+    "source_url": "https://opengameart.org/content/monsterboy-in-wonder-world-mockup-assets",
+    "file_in_source": {
+      "file": "monsterboy_0.png",
+      "rect": [
+        160,
+        960,
+        128,
+        96
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "surt-monsterboy-m2",
+    "file": "images/surt-monsterboy-m2.png",
+    "width": 128,
+    "height": 112,
+    "colors": 16,
+    "size_bin": "medium",
+    "palette_bin": "5-16",
+    "genre": "scene",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Monster Boy in Wonder World mockup assets",
+    "author": "surt",
+    "source_url": "https://opengameart.org/content/monsterboy-in-wonder-world-mockup-assets",
+    "file_in_source": {
+      "file": "monsterboy_0.png",
+      "rect": [
+        480,
+        600,
+        128,
+        112
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "urizen-tile-r00c00",
+    "file": "images/urizen-tile-r00c00.png",
+    "width": 12,
+    "height": 12,
+    "colors": 2,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Urizen 1Bit Tileset v2.0",
+    "author": "vurmux",
+    "source_url": "https://vurmux.itch.io/urizen-onebit-tileset",
+    "file_in_source": {
+      "file": "urizen_onebit_tileset__v2d0.png",
+      "rect": [
+        1,
+        1,
+        12,
+        12
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "urizen-tile-r07c146",
+    "file": "images/urizen-tile-r07c146.png",
+    "width": 12,
+    "height": 12,
+    "colors": 7,
+    "size_bin": "tiny",
+    "palette_bin": "5-16",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Urizen 1Bit Tileset v2.0",
+    "author": "vurmux",
+    "source_url": "https://vurmux.itch.io/urizen-onebit-tileset",
+    "file_in_source": {
+      "file": "urizen_onebit_tileset__v2d0.png",
+      "rect": [
+        1899,
+        92,
+        12,
+        12
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "urizen-tile-r18c155",
+    "file": "images/urizen-tile-r18c155.png",
+    "width": 12,
+    "height": 12,
+    "colors": 2,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Urizen 1Bit Tileset v2.0",
+    "author": "vurmux",
+    "source_url": "https://vurmux.itch.io/urizen-onebit-tileset",
+    "file_in_source": {
+      "file": "urizen_onebit_tileset__v2d0.png",
+      "rect": [
+        2016,
+        235,
+        12,
+        12
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  },
+  {
+    "id": "urizen-tile-r48c102",
+    "file": "images/urizen-tile-r48c102.png",
+    "width": 12,
+    "height": 12,
+    "colors": 2,
+    "size_bin": "tiny",
+    "palette_bin": "2-4",
+    "genre": "tile",
+    "tags": [
+      "opaque"
+    ],
+    "source": "Urizen 1Bit Tileset v2.0",
+    "author": "vurmux",
+    "source_url": "https://vurmux.itch.io/urizen-onebit-tileset",
+    "file_in_source": {
+      "file": "urizen_onebit_tileset__v2d0.png",
+      "rect": [
+        1327,
+        625,
+        12,
+        12
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": ""
+  }
+]

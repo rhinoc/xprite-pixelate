@@ -1,0 +1,63 @@
+{
+  "name": "@xprite/pixelate",
+  "version": "0.1.0",
+  "description": "Recover the real pixel grid of AI-generated and upscaled pixel art, and turn images into pixel art.",
+  "license": "MIT",
+  "author": "rhinoc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhinoc/xprite-pixelate.git"
+  },
+  "homepage": "https://github.com/rhinoc/xprite-pixelate#readme",
+  "keywords": [
+    "pixel-art",
+    "pixelate",
+    "grid-detection",
+    "ai-art",
+    "sprite",
+    "image-processing"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./testing": {
+      "types": "./dist/grid-test-images.d.ts",
+      "default": "./dist/grid-test-images.js"
+    },
+    "./wasm/ac-rl-detect-worker.mjs": "./wasm/ac-rl-detect-worker.mjs",
+    "./wasm/pixelfixer_detect.js": {
+      "types": "./wasm/pixelfixer_detect.d.ts",
+      "default": "./wasm/pixelfixer_detect.js"
+    },
+    "./wasm/pixelfixer_detect_bg.wasm": "./wasm/pixelfixer_detect_bg.wasm",
+    "./wasm/ac-rl-detect-browser-worker.js": "./wasm/ac-rl-detect-browser-worker.js"
+  },
+  "files": [
+    "dist",
+    "wasm",
+    "licenses",
+    "LICENSE",
+    "NOTICE.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "bench": "node bench/run.mjs",
+    "prepublishOnly": "pnpm run typecheck && pnpm run test && pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "esbuild": "0.28.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}
