@@ -5,20 +5,28 @@
 
 [English](https://github.com/rhinoc/xprite-pixelate/blob/main/README.md) | 简体中文
 
-| AI 生成，887×887 | 找到的网格 | 真正的像素画，48×49 |
-| :---: | :---: | :---: |
-| ![输入](docs/images/griffith-input.png) | ![网格](docs/images/griffith-mesh.png) | ![结果](docs/images/griffith-result.png) |
+找出 AI 生成像素画中真正的像素网格，每一格还原成一个干净的像素。它也能把普通图片转成像素画。它可以在浏览器和 Node 中运行，没有运行时依赖，是像素编辑器 [Xprite](https://xprite.cc) 的导入器。
 
-## 简介
+## 与其他工具对比
 
-图像生成模型画出的“像素画”边缘发虚，有噪点，轮廓半透明，每一格的宽度也不一样。这个包找出图里真正的像素网格，每一格还原成一个干净的像素。它也能把普通图片转成像素画。
+一张真实的 AI 生成图（887×887，格宽 15 到 21 像素不等），各工具用默认设置还原的结果。Xprite 把每一刀都切在颜色边缘上，所以不会切开眼睛、靴子和剑。
 
-它可以在浏览器和 Node 中运行，没有运行时依赖，包内自带一个 WebAssembly 模块。它是像素编辑器 [Xprite](https://xprite.cc) 的导入器。
+| 找到的网格 | Xprite，48×49 | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer)，47×48 | [perfectPixel](https://github.com/theamusing/perfectPixel)，50×50 | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art)，53×54 |
+| :---: | :---: | :---: | :---: | :---: |
+| ![网格](docs/images/griffith-mesh.png) | ![Xprite](docs/images/griffith-xprite.png) | ![pixel-art-fixer](docs/images/griffith-fixer.png) | ![perfectPixel](docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](docs/images/griffith-proper.png) |
+
+在[我们的基准测试](#基准测试)的 AI 套件（1746 个用例）上，Xprite 得到正确尺寸的次数最多：
+
+| 方法 | 尺寸完全正确 | 差 1 格以内 | 像素一致率 | 半透明毛边 | 中位耗时 |
+| --- | --- | --- | --- | --- | --- |
+| Xprite Auto | **83.6%** | **90.0%** | **99.8%** | 0.1% | 1.55 s |
+| pixel-art-fixer | 49.7% | 80.9% | 98.3% | 0.0% | 0.18 s |
+| perfectPixel | 53.3% | 68.0% | 96.7% | - | 0.03 s |
+| proper-pixel-art | 72.2% | 80.4% | 99.7% | 0.0% | 0.49 s |
 
 ## 目录
 
 - [示例](#示例)
-- [与其他工具对比](#与其他工具对比)
 - [安装](#安装)
 - [用法](#用法)
 - [原理](#原理)
@@ -27,49 +35,55 @@
 
 ## 示例
 
-下面的输入来自基准测试的 AI 套件：把 CC0 像素画按生成模型的方式渲染成假像素画。每个结果的尺寸都和原画完全一致。
+每个示例取自基准测试 AI 套件的一个类别：把 CC0 像素画按生成模型的方式渲染，原画尺寸已知。尺寸是可见画面的格数，✓ 表示与原画尺寸完全一致。每个工具都使用默认设置。
 
 ### 一张画布上的两个角色
 
-- 哥布林，作者 LuizMelo（[Monsters Creatures Fantasy](https://luizmelo.itch.io/monsters-creatures-fantasy)，CC0）
+- [哥布林，作者 LuizMelo](https://luizmelo.itch.io/monsters-creatures-fantasy)，CC0。类别 `gen_pair`。原画：78×36。
 
-| 输入，1800×845 | 找到的网格 | 结果，103×49 |
-| :---: | :---: | :---: |
-| ![输入](docs/images/goblins-input.png) | ![网格](docs/images/goblins-mesh.png) | ![结果](docs/images/goblins-result.png) |
-
-### 格内有绘画式明暗
-
-- 娜迦法师，来自 [Dungeon Crawl Stone Soup tiles](https://github.com/crawl/tiles)（CC0）
-
-| 输入，411×425 | 找到的网格 | 结果，50×50 |
-| :---: | :---: | :---: |
-| ![输入](docs/images/naga-input.png) | ![网格](docs/images/naga-mesh.png) | ![结果](docs/images/naga-result.png) |
+| 输入，1800×845 | Xprite，78×36 ✓ | pixel-art-fixer，78×35 ✗ | perfectPixel，80×36 ✗ | proper-pixel-art，79×36 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![输入，1800×845](docs/images/pair-input.png) | ![Xprite](docs/images/pair-xprite.png) | ![pixel-art-fixer](docs/images/pair-fixer.png) | ![perfectPixel](docs/images/pair-perfectpixel.png) | ![proper-pixel-art](docs/images/pair-proper.png) |
 
 ### 格子漂移和抖动
 
-- 怪物，作者 Denzi（[Denzi's public domain art](https://opengameart.org/content/denzis-public-domain-art)，CC0）
+- [巨龙，作者 ansimuz](https://opengameart.org/content/sideview-fantasy-patreon-collection)，CC0。类别 `gen_wobble`。原画：71×39。
 
-| 输入，606×924 | 找到的网格 | 结果，45×67 |
-| :---: | :---: | :---: |
-| ![输入](docs/images/wobble-input.png) | ![网格](docs/images/wobble-mesh.png) | ![结果](docs/images/wobble-result.png) |
+| 输入，1226×664 | Xprite，71×39 ✓ | pixel-art-fixer，69×38 ✗ | perfectPixel，74×39 ✗ | proper-pixel-art，69×38 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![输入，1226×664](docs/images/wobble-input.png) | ![Xprite](docs/images/wobble-xprite.png) | ![pixel-art-fixer](docs/images/wobble-fixer.png) | ![perfectPixel](docs/images/wobble-perfectpixel.png) | ![proper-pixel-art](docs/images/wobble-proper.png) |
 
 ### 小格子和 WebP 压缩损伤
 
-- 老人，作者 ansimuz（[Gothicvania Town](https://opengameart.org/content/gothicvania-town)，CC0）
+- [怪物，作者 Denzi](https://opengameart.org/content/denzis-public-domain-art)，CC0。类别 `gen_small_pitch`。原画：32×48。
 
-| 输入，250×380 | 找到的网格 | 结果，39×57 |
-| :---: | :---: | :---: |
-| ![输入](docs/images/oldman-input.png) | ![网格](docs/images/oldman-mesh.png) | ![结果](docs/images/oldman-result.png) |
+| 输入，218×339 | Xprite，32×48 ✓ | pixel-art-fixer，32×47 ✗ | perfectPixel，32×49 ✗ | proper-pixel-art，34×49 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![输入，218×339](docs/images/small-input.png) | ![Xprite](docs/images/small-xprite.png) | ![pixel-art-fixer](docs/images/small-fixer.png) | ![perfectPixel](docs/images/small-perfectpixel.png) | ![proper-pixel-art](docs/images/small-proper.png) |
 
-## 与其他工具对比
+### 大块透明画布上的小角色
 
-顶部那张图，各工具用默认设置还原的结果：
+- [猫耳少女，作者 cawfeecrow](https://opengameart.org/content/nekomimi-girl-portrait)，CC0。类别 `gen_sparse`。原画：123×136。
 
-| Xprite Auto，48×49 | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer)，47×48 | [perfectPixel](https://github.com/theamusing/perfectPixel)，50×50 | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art)，53×54 |
-| :---: | :---: | :---: | :---: |
-| ![Xprite](docs/images/griffith-result.png) | ![pixel-art-fixer](docs/images/griffith-fixer.png) | ![perfectPixel](docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](docs/images/griffith-proper.png) |
+| 输入，1797×1800 | Xprite，123×136 ✓ | pixel-art-fixer，122×136 ✗ | perfectPixel，124×136 ✗ | proper-pixel-art，127×142 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![输入，1797×1800](docs/images/sparse-input.png) | ![Xprite](docs/images/sparse-xprite.png) | ![pixel-art-fixer](docs/images/sparse-fixer.png) | ![perfectPixel](docs/images/sparse-perfectpixel.png) | ![proper-pixel-art](docs/images/sparse-proper.png) |
 
-这张图的格宽在 15 到 21 像素之间，所以等宽网格总会在某处切进画好的像素。Xprite 把每一刀都切在颜色边缘上。1746 个用例的得分见[基准测试](#基准测试)。
+### 近白色背景
+
+- [飞龙，作者 ansimuz](https://opengameart.org/content/sideview-fantasy-patreon-collection)，CC0。类别 `gen_white`。原画：162×106。
+
+| 输入，1800×1210 | Xprite，162×106 ✓ | pixel-art-fixer，325×208 ✗ | perfectPixel，161×105 ✗ | proper-pixel-art，168×106 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![输入，1800×1210](docs/images/white-input.png) | ![Xprite](docs/images/white-xprite.png) | ![pixel-art-fixer](docs/images/white-fixer.png) | ![perfectPixel](docs/images/white-perfectpixel.png) | ![proper-pixel-art](docs/images/white-proper.png) |
+
+### 格内有绘画式明暗
+
+- [娜迦法师，Dungeon Crawl Stone Soup](https://github.com/crawl/tiles)，CC0。类别 `gen_painterly`。原画：31×32。
+
+| 输入，411×425 | Xprite，31×32 ✓ | pixel-art-fixer，30×33 ✗ | perfectPixel，31×32 ✓ | proper-pixel-art，31×34 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![输入，411×425](docs/images/painterly-input.png) | ![Xprite](docs/images/painterly-xprite.png) | ![pixel-art-fixer](docs/images/painterly-fixer.png) | ![perfectPixel](docs/images/painterly-perfectpixel.png) | ![proper-pixel-art](docs/images/painterly-proper.png) |
 
 ## 安装
 
@@ -184,7 +198,7 @@ const grid = await detectWithAlgorithmAsync(image);
 
 [`bench/`](bench) 在 CC0 原生像素画上比较本包和另外三个工具。基准测试以已知方式损伤原画，再把每个结果和原画对比打分。每个工具都使用默认设置。
 
-AI 套件（1746 个用例，按生成模型伪造像素画的方式渲染）：
+AI 套件（12 个类别共 1746 个用例，按生成模型伪造像素画的方式渲染）：
 
 | 方法 | 尺寸完全正确 | 差 1 格以内 | 像素一致率 | ΔE | 半透明毛边 | 中位耗时 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -192,6 +206,23 @@ AI 套件（1746 个用例，按生成模型伪造像素画的方式渲染）：
 | pixel-art-fixer | 49.7% | 80.9% | 98.3% | 1.74 | 0.0% | 0.18 s |
 | perfectPixel | 53.3% | 68.0% | 96.7% | 2.42 | - | 0.03 s |
 | proper-pixel-art | 72.2% | 80.4% | 99.7% | **0.64** | 0.0% | 0.49 s |
+
+各类别的尺寸完全正确率：
+
+| 类别 | Xprite | pixel-art-fixer | perfectPixel | proper-pixel-art |
+| --- | --- | --- | --- | --- |
+| 干净 (`gen_clean`) | **93.6%** | 71.7% | 58.4% | 74.6% |
+| 稀疏画布 (`gen_sparse`) | **99.0%** | 63.5% | 71.9% | 88.5% |
+| 近白色背景 (`gen_white`) | 77.7% | 65.2% | 66.1% | **82.1%** |
+| 柔和轮廓 (`gen_soft_edge`) | **95.8%** | 61.9% | 67.8% | 82.2% |
+| 漂移和 WebP (`gen_webp`) | **80.9%** | 40.5% | 57.8% | 71.1% |
+| 光晕和 JPEG (`gen_halo_jpeg`) | **82.7%** | 52.6% | 60.1% | 72.8% |
+| 绘画式明暗 (`gen_painterly`) | **84.5%** | 39.1% | 67.8% | 79.3% |
+| 小格子（4-8 px） (`gen_small_pitch`) | **72.2%** | 47.9% | 40.2% | 43.8% |
+| 大格子（24-48 px） (`gen_large_pitch`) | 68.2% | 22.0% | 68.2% | **78.0%** |
+| 强漂移 (`gen_wobble`) | **73.3%** | 30.8% | 30.8% | 54.1% |
+| 两个角色 (`gen_pair`) | **97.1%** | 62.7% | 45.1% | 72.5% |
+| 投影 (`gen_shadow`) | **97.3%** | 64.0% | 0.0% | 84.7% |
 
 [pixel-bench](https://github.com/Retro-Diffusion/pixel-bench) v1 套件（7651 个放大和有损处理用例）：
 

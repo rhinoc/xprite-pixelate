@@ -5,23 +5,33 @@
 
 English | [简体中文](https://github.com/rhinoc/xprite-pixelate/blob/main/README.zh-CN.md)
 
-| AI-generated, 887×887 | Recovered grid | Real pixel art, 48×49 |
-| :---: | :---: | :---: |
-| ![Input](docs/images/griffith-input.png) | ![Grid](docs/images/griffith-mesh.png) | ![Result](docs/images/griffith-result.png) |
+Recover the real pixel grid of AI-generated pixel art and get back one clean pixel per cell. It
+also turns ordinary images into pixel art. It runs in browsers and Node, has no runtime
+dependencies, and is the importer of the [Xprite](https://xprite.cc) pixel editor.
 
-## Summary
+## Compared with other tools
 
-Image generators draw "pixel art" with soft edges, noise, half-transparent outlines and cells of
-uneven width. This package finds the real pixel grid in such an image and gives back one clean
-pixel per cell. It also turns ordinary images into pixel art.
+A real generated image (887×887, cells 15 to 21 px wide), recovered by each tool with its default
+settings. Xprite puts each cut on a colour edge, so it does not cut through the eye, the boots or
+the sword.
 
-It runs in browsers and Node and has no runtime dependencies. One WebAssembly module ships inside
-the package. It is the importer of the [Xprite](https://xprite.cc) pixel editor.
+| Recovered grid | Xprite, 48×49 | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer), 47×48 | [perfectPixel](https://github.com/theamusing/perfectPixel), 50×50 | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art), 53×54 |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Grid](docs/images/griffith-mesh.png) | ![Xprite](docs/images/griffith-xprite.png) | ![pixel-art-fixer](docs/images/griffith-fixer.png) | ![perfectPixel](docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](docs/images/griffith-proper.png) |
+
+On the AI suite of [our benchmark](#benchmark) (1746 cases), Xprite gets the exact size most
+often:
+
+| Method | Exact size | Within 1 cell | Pixel match | Half-transparent fringe | Median time |
+| --- | --- | --- | --- | --- | --- |
+| Xprite Auto | **83.6%** | **90.0%** | **99.8%** | 0.1% | 1.55 s |
+| pixel-art-fixer | 49.7% | 80.9% | 98.3% | 0.0% | 0.18 s |
+| perfectPixel | 53.3% | 68.0% | 96.7% | - | 0.03 s |
+| proper-pixel-art | 72.2% | 80.4% | 99.7% | 0.0% | 0.49 s |
 
 ## Contents
 
 - [Examples](#examples)
-- [Compared with other tools](#compared-with-other-tools)
 - [Install](#install)
 - [Usage](#usage)
 - [How it works](#how-it-works)
@@ -30,52 +40,57 @@ the package. It is the importer of the [Xprite](https://xprite.cc) pixel editor.
 
 ## Examples
 
-These inputs come from the benchmark's AI suite: CC0 pixel art rendered the way generators fake
-it. Each result has exactly the size of the original art.
+Each example is one case from a category of the benchmark's AI suite: CC0 pixel art rendered the
+way generators fake it, with a known native size. The sizes are the visible art in cells; ✓ marks
+the exact native size. Every tool runs with its default settings.
 
 ### Two sprites on one canvas
 
-- Goblins by LuizMelo ([Monsters Creatures Fantasy](https://luizmelo.itch.io/monsters-creatures-fantasy), CC0)
+- [Goblins by LuizMelo](https://luizmelo.itch.io/monsters-creatures-fantasy), CC0. Category `gen_pair`. Native art: 78×36.
 
-| Input, 1800×845 | Recovered grid | Result, 103×49 |
-| :---: | :---: | :---: |
-| ![Input](docs/images/goblins-input.png) | ![Grid](docs/images/goblins-mesh.png) | ![Result](docs/images/goblins-result.png) |
-
-### Painterly shading inside cells
-
-- Naga mage from [Dungeon Crawl Stone Soup tiles](https://github.com/crawl/tiles) (CC0)
-
-| Input, 411×425 | Recovered grid | Result, 50×50 |
-| :---: | :---: | :---: |
-| ![Input](docs/images/naga-input.png) | ![Grid](docs/images/naga-mesh.png) | ![Result](docs/images/naga-result.png) |
+| Input, 1800×845 | Xprite, 78×36 ✓ | pixel-art-fixer, 78×35 ✗ | perfectPixel, 80×36 ✗ | proper-pixel-art, 79×36 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Input, 1800×845](docs/images/pair-input.png) | ![Xprite](docs/images/pair-xprite.png) | ![pixel-art-fixer](docs/images/pair-fixer.png) | ![perfectPixel](docs/images/pair-perfectpixel.png) | ![proper-pixel-art](docs/images/pair-proper.png) |
 
 ### Cells that drift and jitter
 
-- Monster by Denzi ([Denzi's public domain art](https://opengameart.org/content/denzis-public-domain-art), CC0)
+- [Boss dragon by ansimuz](https://opengameart.org/content/sideview-fantasy-patreon-collection), CC0. Category `gen_wobble`. Native art: 71×39.
 
-| Input, 606×924 | Recovered grid | Result, 45×67 |
-| :---: | :---: | :---: |
-| ![Input](docs/images/wobble-input.png) | ![Grid](docs/images/wobble-mesh.png) | ![Result](docs/images/wobble-result.png) |
+| Input, 1226×664 | Xprite, 71×39 ✓ | pixel-art-fixer, 69×38 ✗ | perfectPixel, 74×39 ✗ | proper-pixel-art, 69×38 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Input, 1226×664](docs/images/wobble-input.png) | ![Xprite](docs/images/wobble-xprite.png) | ![pixel-art-fixer](docs/images/wobble-fixer.png) | ![perfectPixel](docs/images/wobble-perfectpixel.png) | ![proper-pixel-art](docs/images/wobble-proper.png) |
 
 ### Small cells and WebP damage
 
-- Old man by ansimuz ([Gothicvania Town](https://opengameart.org/content/gothicvania-town), CC0)
+- [Monster by Denzi](https://opengameart.org/content/denzis-public-domain-art), CC0. Category `gen_small_pitch`. Native art: 32×48.
 
-| Input, 250×380 | Recovered grid | Result, 39×57 |
-| :---: | :---: | :---: |
-| ![Input](docs/images/oldman-input.png) | ![Grid](docs/images/oldman-mesh.png) | ![Result](docs/images/oldman-result.png) |
+| Input, 218×339 | Xprite, 32×48 ✓ | pixel-art-fixer, 32×47 ✗ | perfectPixel, 32×49 ✗ | proper-pixel-art, 34×49 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Input, 218×339](docs/images/small-input.png) | ![Xprite](docs/images/small-xprite.png) | ![pixel-art-fixer](docs/images/small-fixer.png) | ![perfectPixel](docs/images/small-perfectpixel.png) | ![proper-pixel-art](docs/images/small-proper.png) |
 
-## Compared with other tools
+### A small sprite on a large clear canvas
 
-The image at the top, recovered by each tool with its default settings:
+- [Nekomimi girl by cawfeecrow](https://opengameart.org/content/nekomimi-girl-portrait), CC0. Category `gen_sparse`. Native art: 123×136.
 
-| Xprite Auto, 48×49 | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer), 47×48 | [perfectPixel](https://github.com/theamusing/perfectPixel), 50×50 | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art), 53×54 |
-| :---: | :---: | :---: | :---: |
-| ![Xprite](docs/images/griffith-result.png) | ![pixel-art-fixer](docs/images/griffith-fixer.png) | ![perfectPixel](docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](docs/images/griffith-proper.png) |
+| Input, 1797×1800 | Xprite, 123×136 ✓ | pixel-art-fixer, 122×136 ✗ | perfectPixel, 124×136 ✗ | proper-pixel-art, 127×142 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Input, 1797×1800](docs/images/sparse-input.png) | ![Xprite](docs/images/sparse-xprite.png) | ![pixel-art-fixer](docs/images/sparse-fixer.png) | ![perfectPixel](docs/images/sparse-perfectpixel.png) | ![proper-pixel-art](docs/images/sparse-proper.png) |
 
-The cells of this image are 15 to 21 px wide, so a grid of even cells cuts through drawn pixels
-somewhere. Xprite puts each cut on a colour edge. The [Benchmark](#benchmark) section has scores
-on 1746 cases.
+### An off-white background
+
+- [Dragon by ansimuz](https://opengameart.org/content/sideview-fantasy-patreon-collection), CC0. Category `gen_white`. Native art: 162×106.
+
+| Input, 1800×1210 | Xprite, 162×106 ✓ | pixel-art-fixer, 325×208 ✗ | perfectPixel, 161×105 ✗ | proper-pixel-art, 168×106 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Input, 1800×1210](docs/images/white-input.png) | ![Xprite](docs/images/white-xprite.png) | ![pixel-art-fixer](docs/images/white-fixer.png) | ![perfectPixel](docs/images/white-perfectpixel.png) | ![proper-pixel-art](docs/images/white-proper.png) |
+
+### Painterly shading inside cells
+
+- [Naga mage, Dungeon Crawl Stone Soup](https://github.com/crawl/tiles), CC0. Category `gen_painterly`. Native art: 31×32.
+
+| Input, 411×425 | Xprite, 31×32 ✓ | pixel-art-fixer, 30×33 ✗ | perfectPixel, 31×32 ✓ | proper-pixel-art, 31×34 ✗ |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Input, 411×425](docs/images/painterly-input.png) | ![Xprite](docs/images/painterly-xprite.png) | ![pixel-art-fixer](docs/images/painterly-fixer.png) | ![perfectPixel](docs/images/painterly-perfectpixel.png) | ![proper-pixel-art](docs/images/painterly-proper.png) |
 
 ## Install
 
@@ -208,7 +223,7 @@ Each source file in [`src/`](src) describes its step.
 benchmark damages the art in known ways and scores each result against the original. Every tool
 runs with its default settings.
 
-AI suite (1746 cases rendered the way generators fake pixel art):
+AI suite (1746 cases in 12 categories, rendered the way generators fake pixel art):
 
 | Method | Exact size | Within 1 cell | Pixel match | ΔE | Half-transparent fringe | Median time |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -216,6 +231,23 @@ AI suite (1746 cases rendered the way generators fake pixel art):
 | pixel-art-fixer | 49.7% | 80.9% | 98.3% | 1.74 | 0.0% | 0.18 s |
 | perfectPixel | 53.3% | 68.0% | 96.7% | 2.42 | - | 0.03 s |
 | proper-pixel-art | 72.2% | 80.4% | 99.7% | **0.64** | 0.0% | 0.49 s |
+
+Exact size per category:
+
+| Category | Xprite | pixel-art-fixer | perfectPixel | proper-pixel-art |
+| --- | --- | --- | --- | --- |
+| Clean (`gen_clean`) | **93.6%** | 71.7% | 58.4% | 74.6% |
+| Sparse canvas (`gen_sparse`) | **99.0%** | 63.5% | 71.9% | 88.5% |
+| Off-white background (`gen_white`) | 77.7% | 65.2% | 66.1% | **82.1%** |
+| Soft outline (`gen_soft_edge`) | **95.8%** | 61.9% | 67.8% | 82.2% |
+| Drift and WebP (`gen_webp`) | **80.9%** | 40.5% | 57.8% | 71.1% |
+| Halos and JPEG (`gen_halo_jpeg`) | **82.7%** | 52.6% | 60.1% | 72.8% |
+| Painterly shading (`gen_painterly`) | **84.5%** | 39.1% | 67.8% | 79.3% |
+| Small cells (4-8 px) (`gen_small_pitch`) | **72.2%** | 47.9% | 40.2% | 43.8% |
+| Large cells (24-48 px) (`gen_large_pitch`) | 68.2% | 22.0% | 68.2% | **78.0%** |
+| Strong drift (`gen_wobble`) | **73.3%** | 30.8% | 30.8% | 54.1% |
+| Two sprites (`gen_pair`) | **97.1%** | 62.7% | 45.1% | 72.5% |
+| Drop shadow (`gen_shadow`) | **97.3%** | 64.0% | 0.0% | 84.7% |
 
 [pixel-bench](https://github.com/Retro-Diffusion/pixel-bench) suite v1 (7651 cases of upscales and
 lossy pipelines):

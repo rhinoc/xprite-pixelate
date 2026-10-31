@@ -1,0 +1,280 @@
+{
+ "griffith": {
+  "input": [
+   887,
+   887
+  ],
+  "methods": {
+   "xprite": [
+    48,
+    49
+   ],
+   "fixer": [
+    47,
+    48
+   ],
+   "perfectpixel": [
+    50,
+    50
+   ],
+   "proper": [
+    53,
+    54
+   ]
+  }
+ },
+ "cases": {
+  "pair": {
+   "id": "luizmelo-goblin-idle-f0",
+   "category": "gen_pair",
+   "input": [
+    1800,
+    845
+   ],
+   "native": [
+    78,
+    36
+   ],
+   "methods": {
+    "xprite": {
+     "cells": [
+      78,
+      36
+     ],
+     "exact": true
+    },
+    "fixer": {
+     "cells": [
+      78,
+      35
+     ],
+     "exact": false
+    },
+    "perfectpixel": {
+     "cells": [
+      80,
+      36
+     ],
+     "exact": false
+    },
+    "proper": {
+     "cells": [
+      79,
+      36
+     ],
+     "exact": false
+    }
+   }
+  },
+  "wobble": {
+   "id": "ansimuz-sv-boss-dragon",
+   "category": "gen_wobble",
+   "input": [
+    1226,
+    664
+   ],
+   "native": [
+    71,
+    39
+   ],
+   "methods": {
+    "xprite": {
+     "cells": [
+      71,
+      39
+     ],
+     "exact": true
+    },
+    "fixer": {
+     "cells": [
+      69,
+      38
+     ],
+     "exact": false
+    },
+    "perfectpixel": {
+     "cells": [
+      74,
+      39
+     ],
+     "exact": false
+    },
+    "proper": {
+     "cells": [
+      69,
+      38
+     ],
+     "exact": false
+    }
+   }
+  },
+  "small": {
+   "id": "denzi-monster-r04c01",
+   "category": "gen_small_pitch",
+   "input": [
+    218,
+    339
+   ],
+   "native": [
+    32,
+    48
+   ],
+   "methods": {
+    "xprite": {
+     "cells": [
+      32,
+      48
+     ],
+     "exact": true
+    },
+    "fixer": {
+     "cells": [
+      32,
+      47
+     ],
+     "exact": false
+    },
+    "perfectpixel": {
+     "cells": [
+      32,
+      49
+     ],
+     "exact": false
+    },
+    "proper": {
+     "cells": [
+      34,
+      49
+     ],
+     "exact": false
+    }
+   }
+  },
+  "sparse": {
+   "id": "cawfeecrow-neko",
+   "category": "gen_sparse",
+   "input": [
+    1797,
+    1800
+   ],
+   "native": [
+    123,
+    136
+   ],
+   "methods": {
+    "xprite": {
+     "cells": [
+      123,
+      136
+     ],
+     "exact": true
+    },
+    "fixer": {
+     "cells": [
+      122,
+      136
+     ],
+     "exact": false
+    },
+    "perfectpixel": {
+     "cells": [
+      124,
+      136
+     ],
+     "exact": false
+    },
+    "proper": {
+     "cells": [
+      127,
+      142
+     ],
+     "exact": false
+    }
+   }
+  },
+  "white": {
+   "id": "ansimuz-sv-sunny-dragon",
+   "category": "gen_white",
+   "input": [
+    1800,
+    1210
+   ],
+   "native": [
+    162,
+    106
+   ],
+   "methods": {
+    "xprite": {
+     "cells": [
+      162,
+      106
+     ],
+     "exact": true
+    },
+    "fixer": {
+     "cells": [
+      325,
+      208
+     ],
+     "exact": false
+    },
+    "perfectpixel": {
+     "cells": [
+      161,
+      105
+     ],
+     "exact": false
+    },
+    "proper": {
+     "cells": [
+      168,
+      106
+     ],
+     "exact": false
+    }
+   }
+  },
+  "painterly": {
+   "id": "dcss-naga-mage",
+   "category": "gen_painterly",
+   "input": [
+    411,
+    425
+   ],
+   "native": [
+    31,
+    32
+   ],
+   "methods": {
+    "xprite": {
+     "cells": [
+      31,
+      32
+     ],
+     "exact": true
+    },
+    "fixer": {
+     "cells": [
+      30,
+      33
+     ],
+     "exact": false
+    },
+    "perfectpixel": {
+     "cells": [
+      31,
+      32
+     ],
+     "exact": true
+    },
+    "proper": {
+     "cells": [
+      31,
+      34
+     ],
+     "exact": false
+    }
+   }
+  }
+ }
+}
