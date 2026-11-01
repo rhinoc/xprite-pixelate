@@ -17,7 +17,7 @@ the sword.
 
 | Recovered grid | Xprite, 48×49 | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer), 47×48 | [perfectPixel](https://github.com/theamusing/perfectPixel), 50×50 | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art), 53×54 |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Grid](docs/images/griffith-mesh.png) | ![Xprite](docs/images/griffith-xprite.png) | ![pixel-art-fixer](docs/images/griffith-fixer.png) | ![perfectPixel](docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](docs/images/griffith-proper.png) |
+| ![Grid](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-mesh.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-proper.png) |
 
 On the AI suite of [our benchmark](#benchmark) (1746 cases), Xprite gets the exact size most
 often:
@@ -50,7 +50,7 @@ the exact native size. Every tool runs with its default settings.
 
 | Input, 1800×845 | Xprite, 78×36 ✓ | pixel-art-fixer, 78×35 ✗ | perfectPixel, 80×36 ✗ | proper-pixel-art, 79×36 ✗ |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Input, 1800×845](docs/images/pair-input.png) | ![Xprite](docs/images/pair-xprite.png) | ![pixel-art-fixer](docs/images/pair-fixer.png) | ![perfectPixel](docs/images/pair-perfectpixel.png) | ![proper-pixel-art](docs/images/pair-proper.png) |
+| ![Input, 1800×845](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-proper.png) |
 
 ### Cells that drift and jitter
 
@@ -58,7 +58,7 @@ the exact native size. Every tool runs with its default settings.
 
 | Input, 1226×664 | Xprite, 71×39 ✓ | pixel-art-fixer, 69×38 ✗ | perfectPixel, 74×39 ✗ | proper-pixel-art, 69×38 ✗ |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Input, 1226×664](docs/images/wobble-input.png) | ![Xprite](docs/images/wobble-xprite.png) | ![pixel-art-fixer](docs/images/wobble-fixer.png) | ![perfectPixel](docs/images/wobble-perfectpixel.png) | ![proper-pixel-art](docs/images/wobble-proper.png) |
+| ![Input, 1226×664](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-proper.png) |
 
 ### Small cells and WebP damage
 
@@ -66,7 +66,7 @@ the exact native size. Every tool runs with its default settings.
 
 | Input, 218×339 | Xprite, 32×48 ✓ | pixel-art-fixer, 32×47 ✗ | perfectPixel, 32×49 ✗ | proper-pixel-art, 34×49 ✗ |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Input, 218×339](docs/images/small-input.png) | ![Xprite](docs/images/small-xprite.png) | ![pixel-art-fixer](docs/images/small-fixer.png) | ![perfectPixel](docs/images/small-perfectpixel.png) | ![proper-pixel-art](docs/images/small-proper.png) |
+| ![Input, 218×339](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-proper.png) |
 
 ### A small sprite on a large clear canvas
 
@@ -74,7 +74,7 @@ the exact native size. Every tool runs with its default settings.
 
 | Input, 1797×1800 | Xprite, 123×136 ✓ | pixel-art-fixer, 122×136 ✗ | perfectPixel, 124×136 ✗ | proper-pixel-art, 127×142 ✗ |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Input, 1797×1800](docs/images/sparse-input.png) | ![Xprite](docs/images/sparse-xprite.png) | ![pixel-art-fixer](docs/images/sparse-fixer.png) | ![perfectPixel](docs/images/sparse-perfectpixel.png) | ![proper-pixel-art](docs/images/sparse-proper.png) |
+| ![Input, 1797×1800](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-proper.png) |
 
 ### An off-white background
 
@@ -82,7 +82,7 @@ the exact native size. Every tool runs with its default settings.
 
 | Input, 1800×1210 | Xprite, 162×106 ✓ | pixel-art-fixer, 325×208 ✗ | perfectPixel, 161×105 ✗ | proper-pixel-art, 168×106 ✗ |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Input, 1800×1210](docs/images/white-input.png) | ![Xprite](docs/images/white-xprite.png) | ![pixel-art-fixer](docs/images/white-fixer.png) | ![perfectPixel](docs/images/white-perfectpixel.png) | ![proper-pixel-art](docs/images/white-proper.png) |
+| ![Input, 1800×1210](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-proper.png) |
 
 ### Painterly shading inside cells
 
@@ -90,7 +90,7 @@ the exact native size. Every tool runs with its default settings.
 
 | Input, 411×425 | Xprite, 31×32 ✓ | pixel-art-fixer, 30×33 ✗ | perfectPixel, 31×32 ✓ | proper-pixel-art, 31×34 ✗ |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Input, 411×425](docs/images/painterly-input.png) | ![Xprite](docs/images/painterly-xprite.png) | ![pixel-art-fixer](docs/images/painterly-fixer.png) | ![perfectPixel](docs/images/painterly-perfectpixel.png) | ![proper-pixel-art](docs/images/painterly-proper.png) |
+| ![Input, 411×425](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-proper.png) |
 
 ## Install
 

@@ -1,6 +1,6 @@
 {
   "name": "@xprite/pixelate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Recover the real pixel grid of AI-generated and upscaled pixel art, and turn images into pixel art.",
   "license": "MIT",
   "author": "rhinoc",
