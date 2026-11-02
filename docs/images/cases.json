@@ -20,6 +20,10 @@
    "proper": [
     53,
     54
+   ],
+   "spritefusion": [
+    56,
+    53
    ]
   }
  },
@@ -63,6 +67,13 @@
       36
      ],
      "exact": false
+    },
+    "spritefusion": {
+     "cells": [
+      78,
+      36
+     ],
+     "exact": true
     }
    }
   },
@@ -102,6 +113,13 @@
     "proper": {
      "cells": [
       69,
+      38
+     ],
+     "exact": false
+    },
+    "spritefusion": {
+     "cells": [
+      71,
       38
      ],
      "exact": false
@@ -147,6 +165,13 @@
       49
      ],
      "exact": false
+    },
+    "spritefusion": {
+     "cells": [
+      32,
+      48
+     ],
+     "exact": true
     }
    }
   },
@@ -187,6 +212,13 @@
      "cells": [
       127,
       142
+     ],
+     "exact": false
+    },
+    "spritefusion": {
+     "cells": [
+      118,
+      133
      ],
      "exact": false
     }
@@ -231,6 +263,13 @@
       106
      ],
      "exact": false
+    },
+    "spritefusion": {
+     "cells": [
+      162,
+      106
+     ],
+     "exact": true
     }
    }
   },
@@ -273,6 +312,13 @@
       34
      ],
      "exact": false
+    },
+    "spritefusion": {
+     "cells": [
+      31,
+      32
+     ],
+     "exact": true
     }
    }
   }

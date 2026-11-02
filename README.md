@@ -15,9 +15,9 @@ A real generated image (887×887, cells 15 to 21 px wide), recovered by each too
 settings. Xprite puts each cut on a colour edge, so it does not cut through the eye, the boots or
 the sword.
 
-| Recovered grid | Xprite, 48×49 | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer), 47×48 | [perfectPixel](https://github.com/theamusing/perfectPixel), 50×50 | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art), 53×54 |
-| :---: | :---: | :---: | :---: | :---: |
-| ![Grid](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-mesh.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-proper.png) |
+| Recovered grid | Xprite, 48×49 | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer), 47×48 | [perfectPixel](https://github.com/theamusing/perfectPixel), 50×50 | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art), 53×54 | [Sprite Fusion Pixel Snapper](https://github.com/Hugo-Dz/spritefusion-pixel-snapper), 56×53 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Grid](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-mesh.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-proper.png) | ![Sprite Fusion](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/732237d34dfed3f9cc54d51b6c12ed5121c0978b/docs/images/griffith-spritefusion.png) |
 
 On the AI suite of [our benchmark](#benchmark) (1746 cases), Xprite gets the exact size most
 often:
@@ -42,56 +42,56 @@ often:
 ## Examples
 
 Each example is one case from a category of the benchmark's AI suite: CC0 pixel art rendered the
-way generators fake it, with a known native size. The sizes are the visible art in cells; ✓ marks
+way generators fake it, with a known native size. The sizes are the visible art in cells; ✅ marks
 the exact native size. Every tool runs with its default settings.
 
 ### Two sprites on one canvas
 
 - [Goblins by LuizMelo](https://luizmelo.itch.io/monsters-creatures-fantasy), CC0. Category `gen_pair`. Native art: 78×36.
 
-| Input, 1800×845 | Xprite, 78×36 ✓ | pixel-art-fixer, 78×35 ✗ | perfectPixel, 80×36 ✗ | proper-pixel-art, 79×36 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![Input, 1800×845](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-proper.png) |
+| Input, 1800×845 | Xprite, 78×36 ✅ | pixel-art-fixer, 78×35 ❌ | perfectPixel, 80×36 ❌ | proper-pixel-art, 79×36 ❌ | Sprite Fusion, 78×36 ✅ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Input, 1800×845](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-proper.png) | ![Sprite Fusion](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/732237d34dfed3f9cc54d51b6c12ed5121c0978b/docs/images/pair-spritefusion.png) |
 
 ### Cells that drift and jitter
 
 - [Boss dragon by ansimuz](https://opengameart.org/content/sideview-fantasy-patreon-collection), CC0. Category `gen_wobble`. Native art: 71×39.
 
-| Input, 1226×664 | Xprite, 71×39 ✓ | pixel-art-fixer, 69×38 ✗ | perfectPixel, 74×39 ✗ | proper-pixel-art, 69×38 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![Input, 1226×664](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-proper.png) |
+| Input, 1226×664 | Xprite, 71×39 ✅ | pixel-art-fixer, 69×38 ❌ | perfectPixel, 74×39 ❌ | proper-pixel-art, 69×38 ❌ | Sprite Fusion, 71×38 ❌ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Input, 1226×664](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-proper.png) | ![Sprite Fusion](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/732237d34dfed3f9cc54d51b6c12ed5121c0978b/docs/images/wobble-spritefusion.png) |
 
 ### Small cells and WebP damage
 
 - [Monster by Denzi](https://opengameart.org/content/denzis-public-domain-art), CC0. Category `gen_small_pitch`. Native art: 32×48.
 
-| Input, 218×339 | Xprite, 32×48 ✓ | pixel-art-fixer, 32×47 ✗ | perfectPixel, 32×49 ✗ | proper-pixel-art, 34×49 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![Input, 218×339](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-proper.png) |
+| Input, 218×339 | Xprite, 32×48 ✅ | pixel-art-fixer, 32×47 ❌ | perfectPixel, 32×49 ❌ | proper-pixel-art, 34×49 ❌ | Sprite Fusion, 32×48 ✅ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Input, 218×339](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-proper.png) | ![Sprite Fusion](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/732237d34dfed3f9cc54d51b6c12ed5121c0978b/docs/images/small-spritefusion.png) |
 
 ### A small sprite on a large clear canvas
 
 - [Nekomimi girl by cawfeecrow](https://opengameart.org/content/nekomimi-girl-portrait), CC0. Category `gen_sparse`. Native art: 123×136.
 
-| Input, 1797×1800 | Xprite, 123×136 ✓ | pixel-art-fixer, 122×136 ✗ | perfectPixel, 124×136 ✗ | proper-pixel-art, 127×142 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![Input, 1797×1800](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-proper.png) |
+| Input, 1797×1800 | Xprite, 123×136 ✅ | pixel-art-fixer, 122×136 ❌ | perfectPixel, 124×136 ❌ | proper-pixel-art, 127×142 ❌ | Sprite Fusion, 118×133 ❌ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Input, 1797×1800](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-proper.png) | ![Sprite Fusion](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/732237d34dfed3f9cc54d51b6c12ed5121c0978b/docs/images/sparse-spritefusion.png) |
 
 ### An off-white background
 
 - [Dragon by ansimuz](https://opengameart.org/content/sideview-fantasy-patreon-collection), CC0. Category `gen_white`. Native art: 162×106.
 
-| Input, 1800×1210 | Xprite, 162×106 ✓ | pixel-art-fixer, 325×208 ✗ | perfectPixel, 161×105 ✗ | proper-pixel-art, 168×106 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![Input, 1800×1210](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-proper.png) |
+| Input, 1800×1210 | Xprite, 162×106 ✅ | pixel-art-fixer, 325×208 ❌ | perfectPixel, 161×105 ❌ | proper-pixel-art, 168×106 ❌ | Sprite Fusion, 162×106 ✅ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Input, 1800×1210](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-proper.png) | ![Sprite Fusion](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/732237d34dfed3f9cc54d51b6c12ed5121c0978b/docs/images/white-spritefusion.png) |
 
 ### Painterly shading inside cells
 
 - [Naga mage, Dungeon Crawl Stone Soup](https://github.com/crawl/tiles), CC0. Category `gen_painterly`. Native art: 31×32.
 
-| Input, 411×425 | Xprite, 31×32 ✓ | pixel-art-fixer, 30×33 ✗ | perfectPixel, 31×32 ✓ | proper-pixel-art, 31×34 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![Input, 411×425](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-proper.png) |
+| Input, 411×425 | Xprite, 31×32 ✅ | pixel-art-fixer, 30×33 ❌ | perfectPixel, 31×32 ✅ | proper-pixel-art, 31×34 ❌ | Sprite Fusion, 31×32 ✅ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Input, 411×425](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-proper.png) | ![Sprite Fusion](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/732237d34dfed3f9cc54d51b6c12ed5121c0978b/docs/images/painterly-spritefusion.png) |
 
 ## Install
 
