@@ -262,7 +262,7 @@ lossy pipelines):
 | proper-pixel-art | 16.5% | 28.6% | 93.0% | 3.85 | 0.05 s |
 | Sprite Fusion Pixel Snapper | 6.6% | 26.8% | 91.0% | 4.42 | — |
 
-Pixel match, ΔE and fringe are measured only on each method's exact-size cases, so their sample sets differ. On the 919 AI cases where both Xprite and Sprite Fusion sized the visible art exactly, Xprite / Sprite Fusion pixel match was 99.7% / 98.5%, and ΔE was 0.77 / 1.92. The 91.0% fringe value counts any alpha below 255, including 254: it is not a measure of visibly translucent pixels.
+Pixel match, ΔE and fringe are measured only on each method's exact-size cases. The sample sets can differ, so these values are not directly comparable across methods. Fringe counts alpha values from 1 to 254, including nearly opaque pixels.
 
 Xprite uses adaptive colors; Sprite Fusion (commit `02f9315`) uses its default 16-color palette. These are end-to-end default results, not an isolated grid or matched-palette test. Sprite Fusion times are omitted from the table because its CLI timing includes process start and PNG I/O; see [bench/README.md](bench/README.md) for timing and reproduction. The four existing methods' results are from the previous benchmark run; Sprite Fusion was evaluated on the same cached cases and scoring code. Synthetic damage does not establish real-world success rates.
 

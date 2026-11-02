@@ -108,11 +108,9 @@ The recorded Sprite Fusion results were run on macOS 26.5.2 arm64 with rustc 1.8
 and `RAYON_NUM_THREADS=1`. The other four methods' committed results predate this addition;
 their algorithm source and benchmark scoring have not changed since those records were created.
 The AI suite has 1,746 cases and v1 has 7,651. Sprite Fusion produced no errors or refusals in
-either. Xprite refused 21 AI and 237 v1 cases, which remain in the denominators. On AI, there
-were 919 cases where Xprite and Sprite Fusion both produced exact visible dimensions, 541 only
-Xprite, 72 only Sprite Fusion, and 214 neither. Pixel match and ΔE are conditioned on each method
-being exact, so the main table is not a paired color comparison. On those 919 shared exact cases,
-pixel match is 99.7% / 98.5% and mean ΔE is 0.77 / 1.92 (Xprite / Sprite Fusion).
+either. Xprite refused 21 AI and 237 v1 cases, which remain in the denominators. Pixel match, ΔE
+and fringe are measured only on each method’s exact-size cases. Sample sets can differ, so these
+values are not directly comparable across methods.
 
 `timing.py` warms each method once and runs three repetitions of each of the 60 speed inputs,
 one case at a time. It records every sample and its median can be computed from
