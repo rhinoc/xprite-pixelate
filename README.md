@@ -264,7 +264,7 @@ lossy pipelines):
 
 Pixel match, ΔE and fringe are measured only on each method's exact-size cases. The sample sets can differ, so these values are not directly comparable across methods. Fringe counts alpha values from 1 to 254, including nearly opaque pixels.
 
-Xprite uses adaptive colors; Sprite Fusion (commit `02f9315`) uses its default 16-color palette. These are end-to-end default results, not an isolated grid or matched-palette test. Sprite Fusion times are omitted from the table because its CLI timing includes process start and PNG I/O; see [bench/README.md](bench/README.md) for timing and reproduction. The four existing methods' results are from the previous benchmark run; Sprite Fusion was evaluated on the same cached cases and scoring code. Synthetic damage does not establish real-world success rates.
+Each method uses its default color processing, so these are end-to-end results with different palettes. Timing methods also differ; measurements that include process startup and PNG I/O are omitted from the table. Results use the same cases and scoring code; some were recorded in an earlier run. Synthetic damage does not establish real-world success rates. See [bench/README.md](bench/README.md) for method versions, timing and reproduction.
 
 ## License
 
