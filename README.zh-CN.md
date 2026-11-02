@@ -11,9 +11,9 @@
 
 一张真实的 AI 生成图（887×887，格宽 15 到 21 像素不等），各工具用默认设置还原的结果。Xprite 把每一刀都切在颜色边缘上，所以不会切开眼睛、靴子和剑。
 
-| 找到的网格 | Xprite，48×49 | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer)，47×48 | [perfectPixel](https://github.com/theamusing/perfectPixel)，50×50 | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art)，53×54 |
-| :---: | :---: | :---: | :---: | :---: |
-| ![网格](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-mesh.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-proper.png) |
+| 找到的网格 | Xprite，48×49 | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer)，47×48 | [perfectPixel](https://github.com/theamusing/perfectPixel)，50×50 | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art)，53×54 | [Sprite Fusion Pixel Snapper](https://github.com/Hugo-Dz/spritefusion-pixel-snapper)，56×53 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![网格](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-mesh.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/griffith-proper.png) | ![Sprite Fusion](docs/images/griffith-spritefusion.png) |
 
 在[我们的基准测试](#基准测试)的 AI 套件（1746 个用例）上，Xprite 得到正确尺寸的次数最多：
 
@@ -36,55 +36,55 @@
 
 ## 示例
 
-每个示例取自基准测试 AI 套件的一个类别：把 CC0 像素画按生成模型的方式渲染，原画尺寸已知。尺寸是可见画面的格数，✓ 表示与原画尺寸完全一致。每个工具都使用默认设置。
+每个示例取自基准测试 AI 套件的一个类别：把 CC0 像素画按生成模型的方式渲染，原画尺寸已知。尺寸是可见画面的格数，✅ 表示与原画尺寸完全一致。每个工具都使用默认设置。
 
 ### 一张画布上的两个角色
 
 - [哥布林，作者 LuizMelo](https://luizmelo.itch.io/monsters-creatures-fantasy)，CC0。类别 `gen_pair`。原画：78×36。
 
-| 输入，1800×845 | Xprite，78×36 ✓ | pixel-art-fixer，78×35 ✗ | perfectPixel，80×36 ✗ | proper-pixel-art，79×36 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![输入，1800×845](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-proper.png) |
+| 输入，1800×845 | Xprite，78×36 ✅ | pixel-art-fixer，78×35 ❌ | perfectPixel，80×36 ❌ | proper-pixel-art，79×36 ❌ | Sprite Fusion，78×36 ✅ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![输入，1800×845](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/pair-proper.png) | ![Sprite Fusion](docs/images/pair-spritefusion.png) |
 
 ### 格子漂移和抖动
 
 - [巨龙，作者 ansimuz](https://opengameart.org/content/sideview-fantasy-patreon-collection)，CC0。类别 `gen_wobble`。原画：71×39。
 
-| 输入，1226×664 | Xprite，71×39 ✓ | pixel-art-fixer，69×38 ✗ | perfectPixel，74×39 ✗ | proper-pixel-art，69×38 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![输入，1226×664](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-proper.png) |
+| 输入，1226×664 | Xprite，71×39 ✅ | pixel-art-fixer，69×38 ❌ | perfectPixel，74×39 ❌ | proper-pixel-art，69×38 ❌ | Sprite Fusion，71×38 ❌ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![输入，1226×664](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/wobble-proper.png) | ![Sprite Fusion](docs/images/wobble-spritefusion.png) |
 
 ### 小格子和 WebP 压缩损伤
 
 - [怪物，作者 Denzi](https://opengameart.org/content/denzis-public-domain-art)，CC0。类别 `gen_small_pitch`。原画：32×48。
 
-| 输入，218×339 | Xprite，32×48 ✓ | pixel-art-fixer，32×47 ✗ | perfectPixel，32×49 ✗ | proper-pixel-art，34×49 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![输入，218×339](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-proper.png) |
+| 输入，218×339 | Xprite，32×48 ✅ | pixel-art-fixer，32×47 ❌ | perfectPixel，32×49 ❌ | proper-pixel-art，34×49 ❌ | Sprite Fusion，32×48 ✅ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![输入，218×339](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/small-proper.png) | ![Sprite Fusion](docs/images/small-spritefusion.png) |
 
 ### 大块透明画布上的小角色
 
 - [猫耳少女，作者 cawfeecrow](https://opengameart.org/content/nekomimi-girl-portrait)，CC0。类别 `gen_sparse`。原画：123×136。
 
-| 输入，1797×1800 | Xprite，123×136 ✓ | pixel-art-fixer，122×136 ✗ | perfectPixel，124×136 ✗ | proper-pixel-art，127×142 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![输入，1797×1800](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-proper.png) |
+| 输入，1797×1800 | Xprite，123×136 ✅ | pixel-art-fixer，122×136 ❌ | perfectPixel，124×136 ❌ | proper-pixel-art，127×142 ❌ | Sprite Fusion，118×133 ❌ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![输入，1797×1800](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/sparse-proper.png) | ![Sprite Fusion](docs/images/sparse-spritefusion.png) |
 
 ### 近白色背景
 
 - [飞龙，作者 ansimuz](https://opengameart.org/content/sideview-fantasy-patreon-collection)，CC0。类别 `gen_white`。原画：162×106。
 
-| 输入，1800×1210 | Xprite，162×106 ✓ | pixel-art-fixer，325×208 ✗ | perfectPixel，161×105 ✗ | proper-pixel-art，168×106 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![输入，1800×1210](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-proper.png) |
+| 输入，1800×1210 | Xprite，162×106 ✅ | pixel-art-fixer，325×208 ❌ | perfectPixel，161×105 ❌ | proper-pixel-art，168×106 ❌ | Sprite Fusion，162×106 ✅ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![输入，1800×1210](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/white-proper.png) | ![Sprite Fusion](docs/images/white-spritefusion.png) |
 
 ### 格内有绘画式明暗
 
 - [娜迦法师，Dungeon Crawl Stone Soup](https://github.com/crawl/tiles)，CC0。类别 `gen_painterly`。原画：31×32。
 
-| 输入，411×425 | Xprite，31×32 ✓ | pixel-art-fixer，30×33 ✗ | perfectPixel，31×32 ✓ | proper-pixel-art，31×34 ✗ |
-| :---: | :---: | :---: | :---: | :---: |
-| ![输入，411×425](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-proper.png) |
+| 输入，411×425 | Xprite，31×32 ✅ | pixel-art-fixer，30×33 ❌ | perfectPixel，31×32 ✅ | proper-pixel-art，31×34 ❌ | Sprite Fusion，31×32 ✅ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| ![输入，411×425](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-input.png) | ![Xprite](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-xprite.png) | ![pixel-art-fixer](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-fixer.png) | ![perfectPixel](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-perfectpixel.png) | ![proper-pixel-art](https://raw.githubusercontent.com/rhinoc/xprite-pixelate/main/docs/images/painterly-proper.png) | ![Sprite Fusion](docs/images/painterly-spritefusion.png) |
 
 ## 安装
 
