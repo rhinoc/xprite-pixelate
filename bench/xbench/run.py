@@ -1,6 +1,6 @@
 """Run the benchmark: build the cases, run every method on them, score and summarise.
 
-  python -I bench/xbench/run.py --suite ai --methods xprite,fixer,perfectpixel,proper
+  python -I bench/xbench/run.py --suite ai --methods xprite,fixer,perfectpixel,proper,spritefusion
   python -I bench/xbench/run.py --suite v1 --limit 40
   python -I bench/xbench/run.py --suite speed --workers 1
 
@@ -238,7 +238,7 @@ def summarise(records: list[dict], group_keys=("category", "size_bin", "palette_
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--suite", choices=["ai", "v1", "speed"], default="ai")
-    p.add_argument("--methods", default="xprite,fixer,perfectpixel,proper")
+    p.add_argument("--methods", default="xprite,fixer,perfectpixel,proper,spritefusion")
     p.add_argument("--limit", type=int)
     p.add_argument("--workers", type=int, default=6)
     a = p.parse_args()

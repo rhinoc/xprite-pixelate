@@ -2,8 +2,8 @@
 
   python -I bench/xbench/charts.py [--out bench/results/charts]
 
-Reads bench/results/<suite>/summary.json. The palette is the dataviz reference palette's first four
-categorical slots in fixed order (validated: adjacent CVD dE >= 9.1, normal-vision >= 22.9). Two
+Reads bench/results/<suite>/summary.json. The first four series use the dataviz reference palette.
+Two
 slots are below 3:1 on the surface, so every bar carries a visible value label.
 """
 from __future__ import annotations
@@ -20,10 +20,10 @@ import numpy as np  # noqa: E402
 from matplotlib.colors import LinearSegmentedColormap  # noqa: E402
 
 RESULTS = Path(__file__).resolve().parent.parent / "results"
-METHODS = ["xprite", "fixer", "perfectpixel", "proper"]
+METHODS = ["xprite", "fixer", "perfectpixel", "proper", "spritefusion"]
 LABELS = {"xprite": "Xprite Auto", "fixer": "pixel-art-fixer", "perfectpixel": "perfectPixel",
-          "proper": "proper-pixel-art"}
-SERIES = {"xprite": "#2a78d6", "fixer": "#eb6834", "perfectpixel": "#1baf7a", "proper": "#eda100"}
+          "proper": "proper-pixel-art", "spritefusion": "Sprite Fusion"}
+SERIES = {"xprite": "#2a78d6", "fixer": "#eb6834", "perfectpixel": "#1baf7a", "proper": "#eda100", "spritefusion": "#9553a6"}
 SURFACE, TEXT, TEXT_2, MUTED = "#fcfcfb", "#0b0b0b", "#52514e", "#898781"
 GRID, AXIS = "#e1e0d9", "#c3c2b7"
 BLUES = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
@@ -79,12 +79,12 @@ def overall(summary, title, out):
     fig, ax = plt.subplots(figsize=(9, 4.6))
     grouped_bars(ax, [zh(names[g]) for g in groups], {m: {zh(k): v for k, v in values[m].items()} for m in methods}, methods)
     ax.set_title(zh(title))
-    ax.legend(ncol=len(methods), loc="upper left", bbox_to_anchor=(0, -0.08))
+    ax.legend(ncol=3, loc="upper left", bbox_to_anchor=(0, -0.08), fontsize=9)
     n = summary["cases"]
     fig.text(0.01, 0.01, f"{n} 个样本。网格对齐：格线和真实切割的 F1。" if ZH else
              f"{n} cases. Grid alignment: pixel-bench F1 of grid lines against the true cuts.",
              color=MUTED, fontsize=9)
-    fig.tight_layout(rect=(0, 0.04, 1, 1))
+    fig.tight_layout(rect=(0, 0.08, 1, 1))
     fig.savefig(out, dpi=200)
     plt.close(fig)
 
@@ -121,7 +121,8 @@ def heatmap(summary, key, title, out, order=None):
 
 
 def speed(summary, out):
-    methods = present(summary)
+    # Sprite Fusion's CLI wall time includes process start and PNG I/O, unlike the other methods.
+    methods = [m for m in present(summary) if m != "spritefusion"]
     fig, ax = plt.subplots(figsize=(8, 4.6))
     ends = []
     for m in methods:
@@ -178,7 +179,7 @@ def delta_e(suite, out, title):
     ax.grid(axis="y", visible=False)
     ax.set_xlim(0, max(values.values()) * 1.18)
     ax.set_title(zh(title))
-    fig.text(0.01, 0.01, f"{len(common)} 个四家都还原对尺寸的样本。" if ZH else f"{len(common)} cases every tool sized exactly.",
+    fig.text(0.01, 0.01, f"{len(common)} 个所有工具都还原对尺寸的样本。" if ZH else f"{len(common)} cases every tool sized exactly.",
              color=MUTED, fontsize=9)
     fig.tight_layout(rect=(0, 0.04, 1, 1))
     fig.savefig(out, dpi=200)
@@ -196,7 +197,7 @@ def table(summary, out):
         o = summary["methods"][m]["overall"]
         lines.append(f"| {LABELS[m]} | {pct(o['exact'])} | {pct(o['within1'])} | "
                      f"{pct(o['grid_align'])} | {pct(o['pixel_match'])} | {num(o['delta_e'])} | "
-                     f"{pct(o['fringe'])} | {num(o['median_s'], 3)} | {o['errors']} |")
+                     f"{pct(o['fringe'])} | {num(o['median_s'], 3) if m != 'spritefusion' else '-'} | {o['errors']} |")
     out.write_text("\n".join(lines) + "\n")
 
 
@@ -209,8 +210,8 @@ ZH_TEXT = {
     "AI suite: exact size by native image size (%)": "AI 套件：按原图尺寸（%）",
     "AI suite: exact size by palette size (%)": "AI 套件：按色数（%）",
     "AI suite: exact size by genre (%)": "AI 套件：按题材（%）",
-    "AI suite: colour error on shared exact cases": "AI 套件：色差（四家都还原对尺寸的样本）",
-    "pixel-bench v1: colour error on shared exact cases": "pixel-bench v1：色差（四家都还原对尺寸的样本）",
+    "AI suite: colour error on shared exact cases": "AI 套件：色差（所有工具都还原对尺寸的样本）",
+    "pixel-bench v1: colour error on shared exact cases": "pixel-bench v1：色差（所有工具都还原对尺寸的样本）",
     "Time per image by input size": "不同输入尺寸下的单张耗时",
     "Longest side of the input (px)": "输入图长边（像素）",
     "Median time per image (s, log scale)": "单张耗时中位数（秒，对数刻度）",

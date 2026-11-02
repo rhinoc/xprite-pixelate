@@ -28,6 +28,7 @@ from PIL import Image
 
 BENCH = Path(__file__).resolve().parent.parent
 FIXER_CLI = BENCH / "vendor/pixel-art-fixer/rust/target/release/pixelfixer"
+SNAPPER_CLI = Path(os.environ.get("PIXEL_SNAPPER_CLI", BENCH / "vendor/spritefusion-pixel-snapper/target/release/spritefusion-pixel-snapper"))
 XPRITE_WORKER = BENCH / "xprite-worker.mjs"
 TIMEOUT_S = 180
 
@@ -155,6 +156,33 @@ class PerfectPixel(Method):
         return Result(out[:, :, :3], seconds)
 
 
+class SpriteFusion(Method):
+    """Official CLI defaults: auto grid and a 16-color quantized palette.
+
+    CLI wall time includes startup and PNG decode/encode. It is not comparable to the
+    in-process timings of the other adapters; retained for diagnostics only.
+    """
+    name, label = "spritefusion", "Sprite Fusion Pixel Snapper"
+
+    def run(self, image):
+        with tempfile.TemporaryDirectory(prefix="xbench-spritefusion-") as d:
+            src, dst = Path(d, "in.png"), Path(d, "out.png")
+            Image.fromarray(image, "RGBA").save(src, compress_level=1)
+            started = time.perf_counter()
+            try:
+                done = subprocess.run([str(SNAPPER_CLI), str(src), str(dst)],
+                                      capture_output=True, text=True, timeout=TIMEOUT_S,
+                                      env={**os.environ, "RAYON_NUM_THREADS": "1"})
+            except subprocess.TimeoutExpired:
+                return Result(None, TIMEOUT_S, error="timeout")
+            wall = time.perf_counter() - started
+            if done.returncode or not dst.exists():
+                return Result(None, wall, error=(done.stderr or done.stdout or "no output")[-300:])
+            with Image.open(dst) as result:
+                out = np.array(result.convert("RGBA"))
+            return Result(out, wall)
+
+
 class Proper(Method):
     name, label = "proper", "proper-pixel-art"
 
@@ -167,4 +195,4 @@ class Proper(Method):
         return Result(np.asarray(result.image.convert("RGBA")), seconds)
 
 
-METHODS = {m.name: m for m in (Xprite, Fixer, PerfectPixel, Proper)}
+METHODS = {m.name: m for m in (Xprite, Fixer, PerfectPixel, Proper, SpriteFusion)}
