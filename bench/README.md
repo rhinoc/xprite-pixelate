@@ -17,10 +17,15 @@ adds an AI suite with those features (see [Suites](#suites)) and also times each
 | `fixer` | [pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer) | The native Rust CLI, `process <in> <out> full`. Time is the CLI's own detect + reconstruct time. |
 | `perfectpixel` | [perfectPixel](https://github.com/theamusing/perfectPixel) | `get_perfect_pixel(rgb)` with its defaults. RGB only: the input is composited over its background. |
 | `proper` | [proper-pixel-art](https://github.com/KennethJAllen/proper-pixel-art) | `proper_pixel_art.image.pixelate(rgba)` with its defaults |
+| `spritefusion` | [Sprite Fusion Pixel Snapper](https://github.com/Hugo-Dz/spritefusion-pixel-snapper), commit `02f9315d73d3219274d17767b36d9a231a6b1f4b` (1.0.0) | Native release CLI `INPUT OUTPUT`, automatic grid, default 16-color quantization, one Rayon thread |
 
-Every method uses its default settings. Times are single-threaded wall-clock seconds for detection
-and reconstruction, without file decode or process start. The machine and worker count are in
-each `summary.json`.
+Each method uses its default settings; Xprite uses adaptive color merging while Snapper quantizes
+to 16 colors before grid detection. These are complete pipelines, not a color-matched experiment.
+The Xprite worker uses Auto plus TwoStage and adaptive palette merging, without a PixelOE prepass.
+The four original adapters report their own detection/reconstruction times. Sprite Fusion reports
+CLI wall time including startup and PNG decode/encode, so its `seconds` values cannot be compared
+directly with the others and are omitted from README timing tables. Accuracy runs use six workers;
+their wall times are not a speed benchmark.
 
 ## Corpus
 
@@ -69,8 +74,8 @@ sprite: scores compare the bounding boxes of the visible art, in cells.
 | `within1` | Both within one cell |
 | `pixel_match` | On exact cases: share of native pixels recovered right (clear stays clear; visible pixels within 24 per channel) |
 | `delta_e` | On exact cases: mean CIELAB dE76 of the visible pixels |
-| `fringe` | On exact cases, for RGBA tools: share of the visible output that is partly transparent where the art is not |
-| `grid_align` | pixel-bench's F1 of the implied grid lines against the true cuts |
+| `fringe` | On exact cases, for RGBA tools: share of visible output with alpha 1–254 where the art is binary. Alpha 254 counts; this is not the visible fringe area. |
+| `grid_align` | pixel-bench's F1 of uniformly spaced lines implied by the output dimensions against the true cuts; not the actual potentially nonuniform cuts |
 | `median_s`, `p90_s` | Time per image |
 
 ## Run
@@ -81,16 +86,54 @@ python3 -m venv .venv
 .venv/bin/pip install numpy scipy opencv-python-headless Pillow matplotlib "perfect-pixel[opencv]" proper-pixel-art
 git clone https://github.com/Retro-Diffusion/pixel-bench vendor/pixel-bench
 git clone https://github.com/Retro-Diffusion/pixel-art-fixer vendor/pixel-art-fixer
+git clone https://github.com/Hugo-Dz/spritefusion-pixel-snapper vendor/spritefusion-pixel-snapper
+git -C vendor/spritefusion-pixel-snapper checkout 02f9315d73d3219274d17767b36d9a231a6b1f4b
+(cd vendor/spritefusion-pixel-snapper && cargo build --release --locked)
 (cd vendor/pixel-art-fixer/rust && cargo build --release)
 (cd .. && pnpm install && pnpm run build)
 .venv/bin/python -I xbench/run.py --suite ai
 .venv/bin/python -I xbench/run.py --suite v1
 .venv/bin/python -I xbench/run.py --suite speed --workers 1
+.venv/bin/python -I xbench/timing.py
 .venv/bin/python -I xbench/charts.py
 ```
 
 The pixel-art-fixer CLI reads its peak memory with a Windows-only call. On other systems, replace
 the body of `peak_rss()` in `vendor/pixel-art-fixer/rust/src/main.rs` with `0`.
+Set `PIXEL_SNAPPER_CLI` to an absolute path to use an existing binary. Existing JSONL files are
+resumed by key; remove a method's file before rerunning it. Summaries are rewritten using the
+selected methods, so pass all methods when producing a full comparison.
+
+The recorded Sprite Fusion results were run on macOS 26.5.2 arm64 with rustc 1.83.0, six workers,
+and `RAYON_NUM_THREADS=1`. The other four methods' committed results predate this addition;
+their algorithm source and benchmark scoring have not changed since those records were created.
+The AI suite has 1,746 cases and v1 has 7,651. Sprite Fusion produced no errors or refusals in
+either. Xprite refused 21 AI and 237 v1 cases, which remain in the denominators. On AI, there
+were 919 cases where Xprite and Sprite Fusion both produced exact visible dimensions, 541 only
+Xprite, 72 only Sprite Fusion, and 214 neither. Pixel match and ΔE are conditioned on each method
+being exact, so the main table is not a paired color comparison. On those 919 shared exact cases,
+pixel match is 99.7% / 98.5% and mean ΔE is 0.77 / 1.92 (Xprite / Sprite Fusion).
+
+`timing.py` warms each method once and runs three repetitions of each of the 60 speed inputs,
+one case at a time. It records every sample and its median can be computed from
+`results/speed/timing-repeated.json`. Xprite is a persistent Node worker that exchanges raw RGBA;
+Sprite Fusion is a fresh Rust CLI process per image and exchanges PNG. The outer wall time includes
+the adapter's file I/O; the CLI's reported adapter time excludes Python's input PNG encoding and
+output loading. This is an operational measurement, not an algorithm-only speed ratio.
+
+The repeated run on the same machine produced these median per-case outer wall times (12 cases per
+size; each case first reduced to the median of three repetitions):
+
+| Longest side | Xprite persistent worker | Sprite Fusion CLI |
+| --- | ---: | ---: |
+| 256 | 0.143 s | 0.017 s |
+| 512 | 0.423 s | 0.026 s |
+| 1024 | 1.161 s | 0.053 s |
+| 1448 | 2.151 s | 0.244 s |
+| 2000 | 2.262 s | 0.255 s |
+
+The worker and CLI have different startup, I/O, grid and palette behavior. Both completed all 180
+measured runs without errors or refusals; startup warmup is outside the table.
 
 ## Limits
 

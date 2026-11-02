@@ -1,0 +1,2886 @@
+{
+  "xprite": [
+    {
+      "key": "0x72-flask-big-green__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.22407137462869287,
+          "reported_s": 0.22200524999999993,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.18321154126897454,
+          "reported_s": 0.18186745900000006,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.15675183292478323,
+          "reported_s": 0.15568174999999995,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "buch-rpg-r00c00__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.19737624982371926,
+          "reported_s": 0.19599854299999991,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.16900170827284455,
+          "reported_s": 0.16749737600000003,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.15680433390662074,
+          "reported_s": 0.15536537599999997,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-constricted__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.13101008301600814,
+          "reported_s": 0.12980499999999984,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1254189577884972,
+          "reported_s": 0.12417275000000018,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.11627120804041624,
+          "reported_s": 0.11545624999999995,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-runed-door__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.17250920832157135,
+          "reported_s": 0.17103729199999998,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.273160457611084,
+          "reported_s": 0.27191841699999986,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.17925366712734103,
+          "reported_s": 0.1774053749999998,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-tile-r03c25__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.1510254996828735,
+          "reported_s": 0.1495025419999997,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.13734637526795268,
+          "reported_s": 0.13648624999999992,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1409764587879181,
+          "reported_s": 0.13943770799999994,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-1bit-r21c47__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.17612724984064698,
+          "reported_s": 0.17367720800000053,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1518326671794057,
+          "reported_s": 0.1507519589999997,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1522796251811087,
+          "reported_s": 0.15144891700000015,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-pp-tile-0000__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.16176691697910428,
+          "reported_s": 0.1608175419999993,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1603360828012228,
+          "reported_s": 0.15927149899999996,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1532380827702582,
+          "reported_s": 0.15203387500000007,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-rts-tile-0129__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.09747745795175433,
+          "reported_s": 0.09457170899999982,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.09190683392807841,
+          "reported_s": 0.0900720420000007,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.09345329226925969,
+          "reported_s": 0.09244733300000008,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-shmup-tile-0107__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.11904420843347907,
+          "reported_s": 0.11716287499999999,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.11254483368247747,
+          "reported_s": 0.11164775099999952,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.12513979198411107,
+          "reported_s": 0.12411899999999969,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-tinydungeon-r02c02__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.1442607077769935,
+          "reported_s": 0.1430453750000006,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.14457662496715784,
+          "reported_s": 0.14335783300000002,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.13892754167318344,
+          "reported_s": 0.13748949999999968,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-tinydungeon-r04c11__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.11750900000333786,
+          "reported_s": 0.11574175000000014,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.10408974997699261,
+          "reported_s": 0.1033002090000009,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.11606895830482244,
+          "reported_s": 0.11510579099999904,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-tinydungeon-r10c11__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.13282237481325865,
+          "reported_s": 0.13174004100000092,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1395879159681499,
+          "reported_s": 0.1386174170000013,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1329178330488503,
+          "reported_s": 0.13200991599999998,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "buch-doodle-r01c02__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.3609257913194597,
+          "reported_s": 0.3596201659999997,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.34946862515062094,
+          "reported_s": 0.34760870700000035,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.3570515410974622,
+          "reported_s": 0.35572749999999903,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "buch-doodle-r02c03__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.39156187511980534,
+          "reported_s": 0.3900111260000003,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.38503808295354247,
+          "reported_s": 0.38399491599999963,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.39010137505829334,
+          "reported_s": 0.3884617920000001,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-lich__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.40918366704136133,
+          "reported_s": 0.4075780840000007,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.4013647078536451,
+          "reported_s": 0.3990829580000009,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.40327012492343783,
+          "reported_s": 0.4004434999999994,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-mosaic0__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.40420633321627975,
+          "reported_s": 0.40255812499999954,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.41315154172480106,
+          "reported_s": 0.4107677079999994,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.40680454205721617,
+          "reported_s": 0.4033133749999997,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-orb-of-destruction__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.30411158269271255,
+          "reported_s": 0.30253750000000035,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.30760129215195775,
+          "reported_s": 0.30641308300000125,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.3128061252646148,
+          "reported_s": 0.3112048329999998,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-orcish-idol__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.4599325000308454,
+          "reported_s": 0.45751137500000005,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.4594557089731097,
+          "reported_s": 0.4583959989999985,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.46248362539336085,
+          "reported_s": 0.4614610420000008,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-runed-door__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.4413307085633278,
+          "reported_s": 0.4401568760000009,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.4399491660296917,
+          "reported_s": 0.4383604579999992,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.43577004177495837,
+          "reported_s": 0.4345199159999993,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-scorpion__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.47927641682326794,
+          "reported_s": 0.47782524999999987,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.4778703339397907,
+          "reported_s": 0.47626187499999834,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.49083329178392887,
+          "reported_s": 0.48897716700000093,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-tengu-warrior__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.4668106669560075,
+          "reported_s": 0.4652143329999999,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.463494666852057,
+          "reported_s": 0.46228070800000387,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.46291720820590854,
+          "reported_s": 0.4615960839999971,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "efilheim-everface-r00c00__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.37539741722866893,
+          "reported_s": 0.3739292920000007,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.37895512534305453,
+          "reported_s": 0.3776294579999994,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.3798718750476837,
+          "reported_s": 0.37775266699999704,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-shmup-ship-0000__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.506954041775316,
+          "reported_s": 0.5051678749999992,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.5146544999442995,
+          "reported_s": 0.5131725420000038,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.5059565831907094,
+          "reported_s": 0.5048184159999982,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "phoenix-portrait-14__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.44704416720196605,
+          "reported_s": 0.44545616599999993,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.45617425022646785,
+          "reported_s": 0.4544828750000015,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.47263783356174827,
+          "reported_s": 0.4683174160000017,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-cliffs-sea__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 3.695486707612872,
+          "reported_s": 3.692186582999999,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.4314195830374956,
+          "reported_s": 3.4280054999999994,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.5406897906214,
+          "reported_s": 3.5378938340000023,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-gothic-oldman__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.8518907502293587,
+          "reported_s": 0.8488051669999986,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.8403217922896147,
+          "reported_s": 0.838305083000003,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.828666124958545,
+          "reported_s": 0.8267211250000037,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-gothic-press-enter__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.31236475007608533,
+          "reported_s": 0.3107278749999969,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.3149263747036457,
+          "reported_s": 0.3124952080000003,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.31382008362561464,
+          "reported_s": 0.312528833999997,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-sv-boss-dragon__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.8774573751725256,
+          "reported_s": 0.8755242500000022,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.8675682498142123,
+          "reported_s": 0.8650904999999984,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.868898042012006,
+          "reported_s": 0.8669367090000014,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-warped-player__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.8537719170562923,
+          "reported_s": 0.8514674989999985,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.8435231666080654,
+          "reported_s": 0.8417944170000046,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.8423161660321057,
+          "reported_s": 0.8410319999999992,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "blarumyrran-face-2__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 1.1236184583976865,
+          "reported_s": 1.120891042000003,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.1216934160329401,
+          "reported_s": 1.1182155419999982,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.1339729996398091,
+          "reported_s": 1.1308986250000017,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "blarumyrran-face-4__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 1.205406959168613,
+          "reported_s": 1.2028034160000025,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.2123409588821232,
+          "reported_s": 1.2093341250000011,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.0866076252423227,
+          "reported_s": 1.083580833,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-m-04__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 1.286049374844879,
+          "reported_s": 1.2825984580000005,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.2786927088163793,
+          "reported_s": 1.2738368750000009,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.2736254171468318,
+          "reported_s": 1.2701511670000036,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-monster-r05c03__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 1.139895792119205,
+          "reported_s": 1.1378792499999908,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.153681832831353,
+          "reported_s": 1.1512844999999943,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.3697177921421826,
+          "reported_s": 1.3661356670000022,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-monster-r10c02__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 1.4063579998910427,
+          "reported_s": 1.403248043000007,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.315347125288099,
+          "reported_s": 1.3129998750000014,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.6058847093954682,
+          "reported_s": 1.6033376659999923,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-shmup-ship-0000__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 1.2916086670011282,
+          "reported_s": 1.2890410419999971,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.3691795417107642,
+          "reported_s": 1.3649626249999929,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.4572533750906587,
+          "reported_s": 1.4520583750000005,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "luizmelo-flyingeye-flight-f0__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 1.3527902499772608,
+          "reported_s": 1.350481375000003,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.167837040964514,
+          "reported_s": 1.1639516240000085,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.1534534161910415,
+          "reported_s": 1.1492662500000006,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-cliffs-sea__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 3.218886208254844,
+          "reported_s": 3.213118498999989,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.263997625093907,
+          "reported_s": 3.257703250000006,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.2811359167099,
+          "reported_s": 3.2769784580000123,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-gothic-well__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 2.4664711663499475,
+          "reported_s": 2.4593680840000163,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.5383335002698004,
+          "reported_s": 2.5291602500000008,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.339369208086282,
+          "reported_s": 2.3336019170000073,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-sv-vegetation__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 2.1011401670984924,
+          "reported_s": 2.0959532079999916,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.0926397922448814,
+          "reported_s": 2.0872299590000183,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.1252362499944866,
+          "reported_s": 2.119840083999981,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-warped-near-bg__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 2.138664291240275,
+          "reported_s": 2.1336601250000093,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.1366198752075434,
+          "reported_s": 2.1270799169999957,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.2116085421293974,
+          "reported_s": 2.205324873999998,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "blarumyrran-face-0__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 2.2625677906908095,
+          "reported_s": 2.256907748999991,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.181837750133127,
+          "reported_s": 2.1715567089999968,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.802475375123322,
+          "reported_s": 1.7931712919999991,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-m-01__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 2.7446325407363474,
+          "reported_s": 2.7393822089999884,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.596285916864872,
+          "reported_s": 2.589373124999984,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.552606333978474,
+          "reported_s": 2.546727665999992,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-m-03__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 2.21672120783478,
+          "reported_s": 2.211649417000008,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.224767207633704,
+          "reported_s": 2.217575708999997,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.2228927495889366,
+          "reported_s": 2.2164001250000003,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-monster-r04c08__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 1.6183428750373423,
+          "reported_s": 1.6146592079999973,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.6106935418210924,
+          "reported_s": 1.6069783750000206,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.6194051671773195,
+          "reported_s": 1.6148133340000204,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "luizmelo-goblin-attack-f6__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 1.670681375078857,
+          "reported_s": 1.6669724580000185,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.6316945003345609,
+          "reported_s": 1.6290625839999993,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.6560420827008784,
+          "reported_s": 1.6515810000000055,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "marcavis-frogatto-layer5__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 2.1627667089924216,
+          "reported_s": 2.1580451659999964,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.1572468341328204,
+          "reported_s": 2.151129000000001,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.1903795418329537,
+          "reported_s": 2.1842639160000252,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "surt-monsterboy-m1__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 1.6319920406676829,
+          "reported_s": 1.6287741239999887,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.6350850001908839,
+          "reported_s": 1.631337459000002,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.6936767920851707,
+          "reported_s": 1.6872635009999795,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "surt-monsterboy-m2__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 1.6703727501444519,
+          "reported_s": 1.6665095830000063,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.7562793754041195,
+          "reported_s": 1.7514373749999794,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.6749014998786151,
+          "reported_s": 1.6705805840000103,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-gothic-press-enter__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 1.2381702503189445,
+          "reported_s": 1.2348843330000236,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.316890667192638,
+          "reported_s": 1.3127297510000062,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.498569041956216,
+          "reported_s": 1.4957595839999849,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-sv-boss-dragon__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 2.529819458257407,
+          "reported_s": 2.520044041999994,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.1016845419071615,
+          "reported_s": 2.088940541000018,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.0214470829814672,
+          "reported_s": 2.013248749999999,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-sv-rock-tiles__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 1.5331967091187835,
+          "reported_s": 1.527385042000009,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.5316963330842555,
+          "reported_s": 1.5262931249999965,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.5229622079059482,
+          "reported_s": 1.5174631660000013,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-warped-near-bg__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 3.0649323337711394,
+          "reported_s": 3.0509370000000056,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.033995999954641,
+          "reported_s": 3.022930040999956,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.24212741618976,
+          "reported_s": 3.232120249999978,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-warped-skyline__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 2.237582457717508,
+          "reported_s": 2.231489375999983,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.244569707661867,
+          "reported_s": 2.237768624999997,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.2516049998812377,
+          "reported_s": 2.2442893740000147,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "cawfeecrow-neko__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 3.1016780422069132,
+          "reported_s": 3.092604916000011,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.1265765842981637,
+          "reported_s": 3.116586791000009,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.0886031249538064,
+          "reported_s": 3.0786533330000236,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-m-03__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 3.1165293329395354,
+          "reported_s": 3.10687820799998,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.1604322087951005,
+          "reported_s": 3.15096295799996,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.1362900831736624,
+          "reported_s": 3.1270037909999955,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-s-01__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 1.6947379997000098,
+          "reported_s": 1.6895952919999837,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.7024059579707682,
+          "reported_s": 1.6967140419999778,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.6918734996579587,
+          "reported_s": 1.6855605839999916,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-s-02__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 1.5793564999476075,
+          "reported_s": 1.5717700419999892,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.583674166817218,
+          "reported_s": 1.5773841240000037,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 1.5780221251770854,
+          "reported_s": 1.5722217920000257,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-xl-01__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 2.7838233751244843,
+          "reported_s": 2.773561333999969,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.806158916093409,
+          "reported_s": 2.797169625999988,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.7740448750555515,
+          "reported_s": 2.7577391239999853,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "fisherg-city-mockup__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 2.717734165955335,
+          "reported_s": 2.709098418000009,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.8220983343198895,
+          "reported_s": 2.813730459000013,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 3.006605625152588,
+          "reported_s": 2.9980584999999844,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "surt-monsterboy-m1__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 2.26389120798558,
+          "reported_s": 2.257785082999995,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.2789222919382155,
+          "reported_s": 2.2718365409999968,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 2.2836427921429276,
+          "reported_s": 2.2764135409999873,
+          "error": null,
+          "refused": false
+        }
+      ]
+    }
+  ],
+  "spritefusion": [
+    {
+      "key": "0x72-flask-big-green__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.00978237483650446,
+          "reported_s": 0.007715708110481501,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.00923504214733839,
+          "reported_s": 0.007180625107139349,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.00984991667792201,
+          "reported_s": 0.00822408264502883,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "buch-rpg-r00c00__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.020916542038321495,
+          "reported_s": 0.017829999793320894,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.020065499935299158,
+          "reported_s": 0.016564332880079746,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.022314332891255617,
+          "reported_s": 0.017744124867022038,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-constricted__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.01599845802411437,
+          "reported_s": 0.00957583263516426,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.010800625197589397,
+          "reported_s": 0.008805624675005674,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.010673416778445244,
+          "reported_s": 0.008326791226863861,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-runed-door__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.020291834138333797,
+          "reported_s": 0.016789540648460388,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.020185084082186222,
+          "reported_s": 0.01727520814165473,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.02080691698938608,
+          "reported_s": 0.01713050017133355,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-tile-r03c25__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.019089875277131796,
+          "reported_s": 0.016185708809643984,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.018963417038321495,
+          "reported_s": 0.01563475001603365,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.018503707833588123,
+          "reported_s": 0.015711749903857708,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-1bit-r21c47__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.017429832834750414,
+          "reported_s": 0.014687583316117525,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.016851874999701977,
+          "reported_s": 0.013831207994371653,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.01596245774999261,
+          "reported_s": 0.013343125116080046,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-pp-tile-0000__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.021023790817707777,
+          "reported_s": 0.01821454195305705,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.021760624833405018,
+          "reported_s": 0.018196625169366598,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.02173695806413889,
+          "reported_s": 0.018774458207190037,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-rts-tile-0129__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.008592416997998953,
+          "reported_s": 0.006693583447486162,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.008240540977567434,
+          "reported_s": 0.006750875152647495,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.007414999883621931,
+          "reported_s": 0.005876457784324884,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-shmup-tile-0107__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.017305332701653242,
+          "reported_s": 0.014082875102758408,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.017237375024706125,
+          "reported_s": 0.014107583090662956,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.017834666650742292,
+          "reported_s": 0.014589084312319756,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-tinydungeon-r02c02__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.0209170407615602,
+          "reported_s": 0.01789308339357376,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.020825999788939953,
+          "reported_s": 0.017916291020810604,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.021134749986231327,
+          "reported_s": 0.01798695931211114,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-tinydungeon-r04c11__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.01729933312162757,
+          "reported_s": 0.014456958044320345,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.018028208054602146,
+          "reported_s": 0.01483825035393238,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.017492624931037426,
+          "reported_s": 0.014650332741439342,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-tinydungeon-r10c11__side256",
+      "side": 256,
+      "samples": [
+        {
+          "wall_s": 0.009149332996457815,
+          "reported_s": 0.007151124998927116,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.009795541875064373,
+          "reported_s": 0.007977582979947329,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.009390958119183779,
+          "reported_s": 0.007369375322014093,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "buch-doodle-r01c02__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.04245045781135559,
+          "reported_s": 0.03612745925784111,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.04266170784831047,
+          "reported_s": 0.03612954169511795,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.04322275007143617,
+          "reported_s": 0.03650958277285099,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "buch-doodle-r02c03__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.044320250395685434,
+          "reported_s": 0.03788154199719429,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.045821957755833864,
+          "reported_s": 0.03886274993419647,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.0445612077601254,
+          "reported_s": 0.03857129067182541,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-lich__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.02078541601076722,
+          "reported_s": 0.016029917169362307,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.019644541200250387,
+          "reported_s": 0.015567082911729813,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.02042570896446705,
+          "reported_s": 0.015789750032126904,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-mosaic0__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.06666695792227983,
+          "reported_s": 0.05886925011873245,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.06752174999564886,
+          "reported_s": 0.05990241700783372,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.0663096671923995,
+          "reported_s": 0.05858250008895993,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-orb-of-destruction__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.025752041023224592,
+          "reported_s": 0.02148212492465973,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.024325415957719088,
+          "reported_s": 0.02040787460282445,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.0249333749525249,
+          "reported_s": 0.02101808274164796,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-orcish-idol__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.022106708027422428,
+          "reported_s": 0.01779737463220954,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.021046750247478485,
+          "reported_s": 0.017149250023066998,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.02144812513142824,
+          "reported_s": 0.017758458852767944,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-runed-door__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.06488899979740381,
+          "reported_s": 0.057008540723472834,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.06522912485525012,
+          "reported_s": 0.05731508368626237,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.06541545828804374,
+          "reported_s": 0.05678387498483062,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-scorpion__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.02651708386838436,
+          "reported_s": 0.022235416807234287,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.0261828750371933,
+          "reported_s": 0.021900916937738657,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.02718729106709361,
+          "reported_s": 0.022897375281900167,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "dcss-tengu-warrior__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.020490583032369614,
+          "reported_s": 0.015822833869606256,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.019255749881267548,
+          "reported_s": 0.015152249950915575,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.019554249942302704,
+          "reported_s": 0.015345084015280008,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "efilheim-everface-r00c00__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.02456970838829875,
+          "reported_s": 0.019630208145827055,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.025762875098735094,
+          "reported_s": 0.02092579100281,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.024756500031799078,
+          "reported_s": 0.01993929222226143,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-shmup-ship-0000__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.019652666989713907,
+          "reported_s": 0.016227500047534704,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.019051707815378904,
+          "reported_s": 0.01587258279323578,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.019480000250041485,
+          "reported_s": 0.015889375004917383,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "phoenix-portrait-14__side512",
+      "side": 512,
+      "samples": [
+        {
+          "wall_s": 0.026850459165871143,
+          "reported_s": 0.022535874973982573,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.0262341252528131,
+          "reported_s": 0.02177812485024333,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.025880209170281887,
+          "reported_s": 0.021827082615345716,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-cliffs-sea__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.18751024967059493,
+          "reported_s": 0.1622006669640541,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1872649579308927,
+          "reported_s": 0.16263533290475607,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.18507975013926625,
+          "reported_s": 0.16024749958887696,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-gothic-oldman__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.035186625085771084,
+          "reported_s": 0.02710595913231373,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.034833166748285294,
+          "reported_s": 0.026414083782583475,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.03420329187065363,
+          "reported_s": 0.026652792003005743,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-gothic-press-enter__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.02017337502911687,
+          "reported_s": 0.01635895762592554,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.02014258410781622,
+          "reported_s": 0.016539083793759346,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.019362667109817266,
+          "reported_s": 0.01601370796561241,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-sv-boss-dragon__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.037869750056415796,
+          "reported_s": 0.030100916977971792,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.03770508384332061,
+          "reported_s": 0.029571459162980318,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.03780562477186322,
+          "reported_s": 0.029766958206892014,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-warped-player__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.03401870792731643,
+          "reported_s": 0.027113832999020815,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.033764875028282404,
+          "reported_s": 0.027728042099624872,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.033599582966417074,
+          "reported_s": 0.027350457850843668,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "blarumyrran-face-2__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.18834850005805492,
+          "reported_s": 0.16706458386033773,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1880894578061998,
+          "reported_s": 0.16675966698676348,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.18730937503278255,
+          "reported_s": 0.1659828331321478,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "blarumyrran-face-4__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.19773195777088404,
+          "reported_s": 0.17681666696444154,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.19651800021529198,
+          "reported_s": 0.1749201249331236,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.19479270931333303,
+          "reported_s": 0.17295654211193323,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-m-04__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.1693778750486672,
+          "reported_s": 0.1384610002860427,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.16566008422523737,
+          "reported_s": 0.13674708409234881,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.16719666682183743,
+          "reported_s": 0.138693958055228,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-monster-r05c03__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.05539408279582858,
+          "reported_s": 0.04666708316653967,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.05609587486833334,
+          "reported_s": 0.047438417095690966,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.0553050828166306,
+          "reported_s": 0.04641116689890623,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-monster-r10c02__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.051398000214248896,
+          "reported_s": 0.04079562518745661,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.05115908291190863,
+          "reported_s": 0.04059950029477477,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.0504986671730876,
+          "reported_s": 0.03925083391368389,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "kenney-shmup-ship-0000__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.05913545936346054,
+          "reported_s": 0.04916083300486207,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.060176833998411894,
+          "reported_s": 0.04990137508139014,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.06036279210820794,
+          "reported_s": 0.049968875013291836,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "luizmelo-flyingeye-flight-f0__side1024",
+      "side": 1024,
+      "samples": [
+        {
+          "wall_s": 0.04671641672030091,
+          "reported_s": 0.03676791721954942,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.047353167086839676,
+          "reported_s": 0.03718812484294176,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.04786649998277426,
+          "reported_s": 0.037875375244766474,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-cliffs-sea__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.3738718330860138,
+          "reported_s": 0.32598524959757924,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.37307625031098723,
+          "reported_s": 0.3250218331813812,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.3743511661887169,
+          "reported_s": 0.3248570840805769,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-gothic-well__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.15167941618710756,
+          "reported_s": 0.12189012486487627,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.14538429211825132,
+          "reported_s": 0.11450770823284984,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1433850829489529,
+          "reported_s": 0.11422158405184746,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-sv-vegetation__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.4608092922717333,
+          "reported_s": 0.41232162481173873,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.502875667065382,
+          "reported_s": 0.4422647086903453,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.4864797918125987,
+          "reported_s": 0.3898218749091029,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-warped-near-bg__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.2379019996151328,
+          "reported_s": 0.2052799998782575,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.23590116668492556,
+          "reported_s": 0.20259079104289412,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.23620220785960555,
+          "reported_s": 0.2023150408640504,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "blarumyrran-face-0__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.3495763330720365,
+          "reported_s": 0.30850704200565815,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.3342593749985099,
+          "reported_s": 0.29375858325511217,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.3374420409090817,
+          "reported_s": 0.2972560413181782,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-m-01__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.12078070873394608,
+          "reported_s": 0.09833895787596703,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.12172966590151191,
+          "reported_s": 0.09894070914015174,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1265312908217311,
+          "reported_s": 0.10050137480720878,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-m-03__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.15085545927286148,
+          "reported_s": 0.12840345781296492,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.149467708542943,
+          "reported_s": 0.1274306671693921,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.14939404232427478,
+          "reported_s": 0.12690204195678234,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-monster-r04c08__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.06840745825320482,
+          "reported_s": 0.05287354066967964,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.06658849958330393,
+          "reported_s": 0.05101029109209776,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.06794612482190132,
+          "reported_s": 0.05245095770806074,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "luizmelo-goblin-attack-f6__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.04876491567119956,
+          "reported_s": 0.037037540692836046,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.04805254191160202,
+          "reported_s": 0.036032916978001595,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.047543374821543694,
+          "reported_s": 0.03638562513515353,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "marcavis-frogatto-layer5__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.33583091711625457,
+          "reported_s": 0.28076487500220537,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.33428233303129673,
+          "reported_s": 0.2790031246840954,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.3413082920014858,
+          "reported_s": 0.2792701660655439,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "surt-monsterboy-m1__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.3617516248486936,
+          "reported_s": 0.32093291683122516,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.35831787530332804,
+          "reported_s": 0.3194073331542313,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.35749970795586705,
+          "reported_s": 0.31771941715851426,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "surt-monsterboy-m2__side1448",
+      "side": 1448,
+      "samples": [
+        {
+          "wall_s": 0.25238791573792696,
+          "reported_s": 0.205077082850039,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.2533119171857834,
+          "reported_s": 0.2067185421474278,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.25190237490460277,
+          "reported_s": 0.20493420911952853,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-gothic-press-enter__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.055637957993894815,
+          "reported_s": 0.04566045803949237,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.05684412503615022,
+          "reported_s": 0.04512170795351267,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.055405874736607075,
+          "reported_s": 0.04548641573637724,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-sv-boss-dragon__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.10868608299642801,
+          "reported_s": 0.08558416599407792,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1098232502117753,
+          "reported_s": 0.08634458296000957,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.11129633383825421,
+          "reported_s": 0.08816712535917759,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-sv-rock-tiles__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.4499352080747485,
+          "reported_s": 0.3976665837690234,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.4478281666524708,
+          "reported_s": 0.3962067919783294,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.4490646249614656,
+          "reported_s": 0.39659804105758667,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-warped-near-bg__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.3410097090527415,
+          "reported_s": 0.2815287080593407,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.34260075027123094,
+          "reported_s": 0.28328508278355,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.3391325417906046,
+          "reported_s": 0.27947654109448195,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "ansimuz-warped-skyline__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.35736904107034206,
+          "reported_s": 0.3021502923220396,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.35331041691824794,
+          "reported_s": 0.30103970831260085,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.35495016584172845,
+          "reported_s": 0.3011392909102142,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "cawfeecrow-neko__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.18045279197394848,
+          "reported_s": 0.13973458297550678,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.18497550021857023,
+          "reported_s": 0.14406599989160895,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.17937112506479025,
+          "reported_s": 0.13879220932722092,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-m-03__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.2905436670407653,
+          "reported_s": 0.24935249984264374,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.2890550000593066,
+          "reported_s": 0.24789245799183846,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.2863238751888275,
+          "reported_s": 0.24472554167732596,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-s-01__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.12479304196313024,
+          "reported_s": 0.10137350019067526,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.12327379174530506,
+          "reported_s": 0.10076233325526118,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.12425816664472222,
+          "reported_s": 0.10133904125541449,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-s-02__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.11778070824220777,
+          "reported_s": 0.09193004108965397,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.1176065830513835,
+          "reported_s": 0.09132612543180585,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.11928312527015805,
+          "reported_s": 0.09273849986493587,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "denzi-crop-xl-01__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.2215336668305099,
+          "reported_s": 0.174493916798383,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.22317858319729567,
+          "reported_s": 0.1759362919256091,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.22121195774525404,
+          "reported_s": 0.17364770779386163,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "fisherg-city-mockup__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.7571628750301898,
+          "reported_s": 0.6625433750450611,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.7374501246958971,
+          "reported_s": 0.6430709999985993,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.8592272498644888,
+          "reported_s": 0.7667920831590891,
+          "error": null,
+          "refused": false
+        }
+      ]
+    },
+    {
+      "key": "surt-monsterboy-m1__side2000",
+      "side": 2000,
+      "samples": [
+        {
+          "wall_s": 0.7446429999545217,
+          "reported_s": 0.6711352500133216,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.7239755000919104,
+          "reported_s": 0.6416243747808039,
+          "error": null,
+          "refused": false
+        },
+        {
+          "wall_s": 0.6945667089894414,
+          "reported_s": 0.6196073750033975,
+          "error": null,
+          "refused": false
+        }
+      ]
+    }
+  ]
+}

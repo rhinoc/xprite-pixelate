@@ -22,12 +22,13 @@ the sword.
 On the AI suite of [our benchmark](#benchmark) (1746 cases), Xprite gets the exact size most
 often:
 
-| Method | Exact size | Within 1 cell | Pixel match | Half-transparent fringe | Median time |
+| Method | Exact size | Within 1 cell | Pixel match | Fringe (alpha 1–254) | Median time |
 | --- | --- | --- | --- | --- | --- |
 | Xprite Auto | **83.6%** | **90.0%** | **99.8%** | 0.1% | 1.55 s |
 | pixel-art-fixer | 49.7% | 80.9% | 98.3% | 0.0% | 0.18 s |
 | perfectPixel | 53.3% | 68.0% | 96.7% | - | 0.03 s |
 | proper-pixel-art | 72.2% | 80.4% | 99.7% | 0.0% | 0.49 s |
+| Sprite Fusion Pixel Snapper | 56.8% | 77.9% | 98.5% | 91.0% | — |
 
 ## Contents
 
@@ -219,35 +220,36 @@ Each source file in [`src/`](src) describes its step.
 
 ## Benchmark
 
-[`bench/`](bench) compares this package with three other tools on CC0 native pixel art. The
+[`bench/`](bench) compares this package with four other tools on mostly CC0 native pixel art (plus one CC-BY source). The
 benchmark damages the art in known ways and scores each result against the original. Every tool
 runs with its default settings.
 
 AI suite (1746 cases in 12 categories, rendered the way generators fake pixel art):
 
-| Method | Exact size | Within 1 cell | Pixel match | ΔE | Half-transparent fringe | Median time |
+| Method | Exact size | Within 1 cell | Pixel match | ΔE | Fringe (alpha 1–254) | Median time |
 | --- | --- | --- | --- | --- | --- | --- |
 | Xprite Auto | **83.6%** | **90.0%** | **99.8%** | 0.82 | 0.1% | 1.55 s |
 | pixel-art-fixer | 49.7% | 80.9% | 98.3% | 1.74 | 0.0% | 0.18 s |
 | perfectPixel | 53.3% | 68.0% | 96.7% | 2.42 | - | 0.03 s |
 | proper-pixel-art | 72.2% | 80.4% | 99.7% | **0.64** | 0.0% | 0.49 s |
+| Sprite Fusion Pixel Snapper | 56.8% | 77.9% | 98.5% | 1.93 | 91.0% | — |
 
 Exact size per category:
 
-| Category | Xprite | pixel-art-fixer | perfectPixel | proper-pixel-art |
-| --- | --- | --- | --- | --- |
-| Clean (`gen_clean`) | **93.6%** | 71.7% | 58.4% | 74.6% |
-| Sparse canvas (`gen_sparse`) | **99.0%** | 63.5% | 71.9% | 88.5% |
-| Off-white background (`gen_white`) | 77.7% | 65.2% | 66.1% | **82.1%** |
-| Soft outline (`gen_soft_edge`) | **95.8%** | 61.9% | 67.8% | 82.2% |
-| Drift and WebP (`gen_webp`) | **80.9%** | 40.5% | 57.8% | 71.1% |
-| Halos and JPEG (`gen_halo_jpeg`) | **82.7%** | 52.6% | 60.1% | 72.8% |
-| Painterly shading (`gen_painterly`) | **84.5%** | 39.1% | 67.8% | 79.3% |
-| Small cells (4-8 px) (`gen_small_pitch`) | **72.2%** | 47.9% | 40.2% | 43.8% |
-| Large cells (24-48 px) (`gen_large_pitch`) | 68.2% | 22.0% | 68.2% | **78.0%** |
-| Strong drift (`gen_wobble`) | **73.3%** | 30.8% | 30.8% | 54.1% |
-| Two sprites (`gen_pair`) | **97.1%** | 62.7% | 45.1% | 72.5% |
-| Drop shadow (`gen_shadow`) | **97.3%** | 64.0% | 0.0% | 84.7% |
+| Category | Xprite | pixel-art-fixer | perfectPixel | proper-pixel-art | Sprite Fusion |
+| --- | --- | --- | --- | --- | --- |
+| Clean (`gen_clean`) | **93.6%** | 71.7% | 58.4% | 74.6% | 56.6% |
+| Sparse canvas (`gen_sparse`) | **99.0%** | 63.5% | 71.9% | 88.5% | 69.8% |
+| Off-white background (`gen_white`) | 77.7% | 65.2% | 66.1% | **82.1%** | 78.6% |
+| Soft outline (`gen_soft_edge`) | **95.8%** | 61.9% | 67.8% | 82.2% | 59.3% |
+| Drift and WebP (`gen_webp`) | **80.9%** | 40.5% | 57.8% | 71.1% | 48.6% |
+| Halos and JPEG (`gen_halo_jpeg`) | **82.7%** | 52.6% | 60.1% | 72.8% | 59.0% |
+| Painterly shading (`gen_painterly`) | **84.5%** | 39.1% | 67.8% | 79.3% | 50.0% |
+| Small cells (4-8 px) (`gen_small_pitch`) | **72.2%** | 47.9% | 40.2% | 43.8% | 42.6% |
+| Large cells (24-48 px) (`gen_large_pitch`) | 68.2% | 22.0% | 68.2% | **78.0%** | 57.8% |
+| Strong drift (`gen_wobble`) | **73.3%** | 30.8% | 30.8% | 54.1% | 49.4% |
+| Two sprites (`gen_pair`) | **97.1%** | 62.7% | 45.1% | 72.5% | 60.8% |
+| Drop shadow (`gen_shadow`) | **97.3%** | 64.0% | 0.0% | 84.7% | 68.5% |
 
 [pixel-bench](https://github.com/Retro-Diffusion/pixel-bench) suite v1 (7651 cases of upscales and
 lossy pipelines):
@@ -258,11 +260,11 @@ lossy pipelines):
 | pixel-art-fixer | 77.8% | 83.5% | **94.4%** | 2.83 | 0.04 s |
 | perfectPixel | 24.2% | 32.9% | 89.7% | 4.31 | 0.002 s |
 | proper-pixel-art | 16.5% | 28.6% | 93.0% | 3.85 | 0.05 s |
+| Sprite Fusion Pixel Snapper | 6.6% | 26.8% | 91.0% | 4.42 | — |
 
-Pixel match and ΔE are measured only on the cases with the exact size. Xprite is the slowest of
-the four tools. The damage is synthetic, so the scores show how the tools rank on these features,
-not how often they succeed on real images. [bench/README.md](bench/README.md) gives the method,
-the categories and the steps to run it.
+Pixel match, ΔE and fringe are measured only on each method's exact-size cases, so their sample sets differ. On the 919 AI cases where both Xprite and Sprite Fusion sized the visible art exactly, Xprite / Sprite Fusion pixel match was 99.7% / 98.5%, and ΔE was 0.77 / 1.92. The 91.0% fringe value counts any alpha below 255, including 254: it is not a measure of visibly translucent pixels.
+
+Xprite uses adaptive colors; Sprite Fusion (commit `02f9315`) uses its default 16-color palette. These are end-to-end default results, not an isolated grid or matched-palette test. Sprite Fusion times are omitted from the table because its CLI timing includes process start and PNG I/O; see [bench/README.md](bench/README.md) for timing and reproduction. The four existing methods' results are from the previous benchmark run; Sprite Fusion was evaluated on the same cached cases and scoring code. Synthetic damage does not establish real-world success rates.
 
 ## License
 
