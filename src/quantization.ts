@@ -69,9 +69,16 @@ export function paletteCoordinates(color: Rgba): Rgba {
   return [lightness * opacity, a * opacity, blueYellow * opacity, opacity];
 }
 
-/** Convert opaque sRGB bytes to OKLab coordinates. */
+const oklabCache = new Map<number, Oklab>();
+
+/** Convert opaque sRGB bytes to OKLab coordinates. Cached per packed RGB. */
 export function rgbToOklab(r: number, g: number, b: number): Oklab {
-  return linearRgbToOklab(linearChannel(r), linearChannel(g), linearChannel(b));
+  const key = (r << 16) | (g << 8) | b;
+  const hit = oklabCache.get(key);
+  if (hit !== undefined) return hit;
+  const value = linearRgbToOklab(linearChannel(r), linearChannel(g), linearChannel(b));
+  oklabCache.set(key, value);
+  return value;
 }
 
 function srgbByteFromLinear(value: number): number {

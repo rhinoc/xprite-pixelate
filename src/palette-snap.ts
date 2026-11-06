@@ -76,14 +76,22 @@ function histogram(image: PixelBuffer): { shades: Shade[]; index: Int32Array } {
 function mergeNearDuplicates(shades: readonly Shade[]): number[][] {
   const order = shades.map((_, i) => i).sort((a, b) => shades[b].count - shades[a].count || a - b);
   const groups: number[][] = [];
+  const threshold2 = NEAR_DUPLICATE_OKLAB_DISTANCE ** 2;
   for (const i of order) {
+    const oklab = shades[i].oklab;
     let best = -1,
-      bestDistance = NEAR_DUPLICATE_OKLAB_DISTANCE;
+      bestDistance2 = threshold2;
     for (let g = 0; g < groups.length; g++) {
-      const d = distance(shades[i].oklab, shades[groups[g][0]].oklab);
-      if (d <= bestDistance) {
-        bestDistance = d;
+      const leader = shades[groups[g][0]].oklab;
+      const dx = oklab[0] - leader[0];
+      const dy = oklab[1] - leader[1];
+      const dz = oklab[2] - leader[2];
+      const d2 = dx * dx + dy * dy + dz * dz;
+      if (d2 <= bestDistance2) {
+        bestDistance2 = d2;
         best = g;
+        // Exact match is optimal; skip remaining groups.
+        if (d2 === 0) break;
       }
     }
     if (best < 0) groups.push([i]);
@@ -143,13 +151,37 @@ function seed(points: readonly Point[], k: number): Oklab[] {
 function cluster(points: readonly Point[], k: number): number[] {
   const centers = seed(points, k);
   const assign = new Int32Array(points.length).fill(-1);
+  // Flatten points and centres into typed arrays so the assignment loop avoids
+  // per-access bounds checks and object property lookups in the inner loop.
+  const n = points.length;
+  const pointData = new Float64Array(n * 3);
+  const pointWeight = new Float64Array(n);
+  for (let i = 0; i < n; i++) {
+    pointData[i * 3] = points[i].oklab[0];
+    pointData[i * 3 + 1] = points[i].oklab[1];
+    pointData[i * 3 + 2] = points[i].oklab[2];
+    pointWeight[i] = points[i].count ** PULL_WEIGHT;
+  }
+  const centerData = new Float64Array(centers.length * 3);
+  const writeCenter = (c: number, value: Oklab) => {
+    centerData[c * 3] = value[0];
+    centerData[c * 3 + 1] = value[1];
+    centerData[c * 3 + 2] = value[2];
+  };
+  for (let c = 0; c < centers.length; c++) writeCenter(c, centers[c]);
   for (let iteration = 0; iteration < MAX_ITERATIONS; iteration++) {
     let changed = false;
-    for (let i = 0; i < points.length; i++) {
+    for (let i = 0; i < n; i++) {
+      const px = pointData[i * 3];
+      const py = pointData[i * 3 + 1];
+      const pz = pointData[i * 3 + 2];
       let best = 0,
         bestDistance = Infinity;
       for (let c = 0; c < centers.length; c++) {
-        const d = distance(points[i].oklab, centers[c]);
+        const dx = px - centerData[c * 3];
+        const dy = py - centerData[c * 3 + 1];
+        const dz = pz - centerData[c * 3 + 2];
+        const d = dx * dx + dy * dy + dz * dz;
         if (d < bestDistance) {
           bestDistance = d;
           best = c;
@@ -162,15 +194,21 @@ function cluster(points: readonly Point[], k: number): number[] {
     }
     if (!changed) break;
     const sums = centers.map(() => [0, 0, 0, 0]);
-    for (let i = 0; i < points.length; i++) {
-      const weight = points[i].count ** PULL_WEIGHT;
+    for (let i = 0; i < n; i++) {
+      const weight = pointWeight[i];
       const s = sums[assign[i]];
-      for (let c = 0; c < 3; c++) s[c] += points[i].oklab[c] * weight;
+      s[0] += pointData[i * 3] * weight;
+      s[1] += pointData[i * 3 + 1] * weight;
+      s[2] += pointData[i * 3 + 2] * weight;
       s[3] += weight;
     }
     for (let c = 0; c < centers.length; c++)
       if (sums[c][3] > 0)
-        centers[c] = [sums[c][0] / sums[c][3], sums[c][1] / sums[c][3], sums[c][2] / sums[c][3]];
+        writeCenter(c, [
+          sums[c][0] / sums[c][3],
+          sums[c][1] / sums[c][3],
+          sums[c][2] / sums[c][3],
+        ]);
   }
   return Array.from(assign);
 }
