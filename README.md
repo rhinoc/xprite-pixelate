@@ -24,7 +24,7 @@ often:
 
 | Method | Exact size | Within 1 cell | Pixel match | Fringe (alpha 1–254) | Median time |
 | --- | --- | --- | --- | --- | --- |
-| Xprite Auto | **83.6%** | **90.0%** | **99.8%** | 0.1% | 1.55 s |
+| Xprite Auto | **83.6%** | **90.0%** | **99.7%** | 0.1% | 2.80 s |
 | pixel-art-fixer | 49.7% | 80.9% | 98.3% | 0.0% | 0.18 s |
 | perfectPixel | 53.3% | 68.0% | 96.7% | - | 0.03 s |
 | proper-pixel-art | 72.2% | 80.4% | 99.7% | 0.0% | 0.49 s |
@@ -228,7 +228,7 @@ AI suite (1746 cases in 12 categories, rendered the way generators fake pixel ar
 
 | Method | Exact size | Within 1 cell | Pixel match | ΔE | Fringe (alpha 1–254) | Median time |
 | --- | --- | --- | --- | --- | --- | --- |
-| Xprite Auto | **83.6%** | **90.0%** | **99.8%** | 0.82 | 0.1% | 1.55 s |
+| Xprite Auto | **83.6%** | **90.0%** | **99.7%** | 0.85 | 0.1% | 2.80 s |
 | pixel-art-fixer | 49.7% | 80.9% | 98.3% | 1.74 | 0.0% | 0.18 s |
 | perfectPixel | 53.3% | 68.0% | 96.7% | 2.42 | - | 0.03 s |
 | proper-pixel-art | 72.2% | 80.4% | 99.7% | **0.64** | 0.0% | 0.49 s |
@@ -256,7 +256,7 @@ lossy pipelines):
 
 | Method | Exact size | Within 1 cell | Pixel match | ΔE | Median time |
 | --- | --- | --- | --- | --- | --- |
-| Xprite Auto | **87.1%** | **90.1%** | 94.3% | **2.79** | 0.24 s |
+| Xprite Auto | **87.1%** | **90.1%** | 94.4% | **2.76** | 0.27 s |
 | pixel-art-fixer | 77.8% | 83.5% | **94.4%** | 2.83 | 0.04 s |
 | perfectPixel | 24.2% | 32.9% | 89.7% | 4.31 | 0.002 s |
 | proper-pixel-art | 16.5% | 28.6% | 93.0% | 3.85 | 0.05 s |

@@ -13,11 +13,7 @@ import {
   pixelationSettingsOptions,
   updatePixelationSettings,
 } from "./settings.ts";
-import {
-  PaletteColorMode,
-  PixelationDither,
-  PixelationMode,
-} from "./types.ts";
+import { PaletteColorMode, PixelationDither, PixelationMode } from "./types.ts";
 
 function make(width: number, height: number, paint: (x: number, y: number) => Rgba): PixelBuffer {
   const data = new Uint8ClampedArray(width * height * 4);
@@ -97,7 +93,7 @@ describe("snapPalette (k-means)", () => {
 });
 
 describe("snapPalette (given palette)", () => {
-  test("snaps every visible pixel to its nearest Lab entry", () => {
+  test("snaps every visible pixel to its nearest OKLab entry", () => {
     const palette: Rgba[] = [
       [0, 0, 0, 255],
       [255, 255, 255, 255],
@@ -224,7 +220,7 @@ describe("snapPalette dithering", () => {
 
   test("Ordered Bayer 8×8 dithers stepped bands when unique shades ≤ Limit colors", () => {
     // Ryan's BOX-resized stepped gradient (36×48): unique shades ≤ 16, so every pixel is
-    // already a palette entry. Old ±RGB Bayer then Lab nearest was a no-op; Bayer8→palette must dither.
+    // already a palette entry. Old ±RGB Bayer then OKLab nearest was a no-op; Bayer8→palette must dither.
     const dir = dirname(fileURLToPath(import.meta.url));
     const meta = JSON.parse(
       readFileSync(join(dir, "fixtures/stepped7-box-36x48.json"), "utf8"),
@@ -317,8 +313,8 @@ describe("snapPalette dithering", () => {
 });
 
 describe("Adaptive color mode (near-duplicate merge)", () => {
-  test("adaptive uses Lab ΔE merge groups without artificial clamps", () => {
-    // Create shades with clear ΔE structure: 3 tight groups
+  test("adaptive uses OKLab merge groups without artificial clamps", () => {
+    // Create shades with clear OKLab distance structure: 3 tight groups
     const combined = make(30, 10, (x) => {
       if (x < 10) return [100, 50, 50, 255]; // Red cluster
       if (x < 20) return [50, 100, 50, 255]; // Green cluster
@@ -337,7 +333,7 @@ describe("Adaptive color mode (near-duplicate merge)", () => {
     // Simulate soft recovery with many invented midtones (slight variations)
     const softRecovery = make(50, 50, (x, y) => {
       const base = Math.floor(y / 2);
-      // Create many slight variations that will merge via ΔE threshold
+      // Create many slight variations that will merge via the OKLab threshold
       const variation = ((x * 7 + y * 13) % 6) - 3; // -3 to +3 variation
       return [100 + base + variation, 80 + base + variation, 60 + base + variation, 255];
     });
@@ -354,10 +350,10 @@ describe("Adaptive color mode (near-duplicate merge)", () => {
   });
 
   test("adaptive preserves distinct colors in clean art", () => {
-    // Art with ~20 distinct colors (well-separated in Lab space)
+    // Art with ~20 distinct colors (well-separated in OKLab space)
     const cleanArt = make(40, 40, (x, y) => {
       const colorIndex = Math.floor(x / 2) + Math.floor(y / 2);
-      // Use well-separated hues to ensure distinct Lab ΔE > 3
+      // Use well-separated hues to ensure distinct OKLab colours
       const hue = (colorIndex * 30) % 360; // 30° steps = well separated
       const r = Math.floor(128 + 127 * Math.cos((hue * Math.PI) / 180));
       const g = Math.floor(128 + 127 * Math.cos(((hue + 120) * Math.PI) / 180));
@@ -370,7 +366,7 @@ describe("Adaptive color mode (near-duplicate merge)", () => {
     const adaptiveCount = colors(adaptive).size;
 
     // Should preserve most or all distinct colors (no arbitrary 8-64 clamp)
-    // Minor merging may occur for Lab-similar colors, but should be close to input
+    // Minor merging may occur for OKLab-similar colors, but should be close to input
     expect(adaptiveCount).toBeGreaterThanOrEqual(Math.floor(uniqueInput * 0.8));
     expect(adaptiveCount).toBeLessThanOrEqual(uniqueInput);
   });
@@ -379,7 +375,7 @@ describe("Adaptive color mode (near-duplicate merge)", () => {
     // Art with 25 well-separated colors
     const richPalette = make(50, 50, (x, y) => {
       const index = Math.floor(x / 2) + Math.floor(y / 2);
-      // Ensure separation: each color differs by at least ΔE > 3
+      // Ensure separation: each color is distinct in OKLab space
       return [(index * 10) % 256, (index * 15) % 256, (index * 20) % 256, 255];
     });
 
