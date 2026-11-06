@@ -24,7 +24,7 @@ to 16 colors before grid detection. These are complete pipelines, not a color-ma
 The Xprite worker uses Auto plus TwoStage and adaptive palette merging, without a PixelOE prepass.
 The four original adapters report their own detection/reconstruction times. Sprite Fusion reports
 CLI wall time including startup and PNG decode/encode, so its `seconds` values cannot be compared
-directly with the others and are omitted from README timing tables. Accuracy runs use six workers;
+directly with the others and are omitted from README timing tables. Accuracy runs use eight workers for xprite and six workers for the other methods;
 their wall times are not a speed benchmark.
 
 ## Corpus
