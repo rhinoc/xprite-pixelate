@@ -102,7 +102,7 @@ export enum PixelationDither {
 export enum PaletteColorMode {
   /** User-specified fixed count (e.g. 16). */
   Fixed = "fixed",
-  /** One colour per group of near-duplicate shades (Lab ΔE) in the recovered image. */
+  /** One colour per group of near-duplicate shades (OKLab distance) in the recovered image. */
   Adaptive = "adaptive",
 }
 
@@ -184,7 +184,7 @@ export interface PaletteSnapOptions {
   colors?: number;
   /** Estimate color count from the image instead of using a fixed count. */
   adaptive?: boolean;
-  /** Snap every visible pixel to its nearest entry (CIE Lab) instead of clustering. */
+  /** Snap every visible pixel to its nearest entry (OKLab) instead of clustering. */
   palette?: readonly Rgba[];
   /** Ordered / Floyd–Steinberg while snapping; None (nearest) when omitted. */
   dither?: PixelationDither;
@@ -219,7 +219,7 @@ export interface PixelateOptions {
   /** Nearest-neighbor upscale to the source dimensions after pixelation. */
   preserveDimensions?: boolean;
   /**
-   * Limit colors: Lab k-means to a colour count that keeps rare colours, or snapping to a given
+   * Limit colors: OKLab k-means to a colour count that keeps rare colours, or snapping to a given
    * palette. Alpha stays per pixel. Off when omitted.
    */
   paletteSnap?: PaletteSnapOptions;

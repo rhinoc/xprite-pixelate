@@ -6,6 +6,7 @@ import type { PaletteEntry } from "./types.ts";
 const CHANNELS = 4;
 const COLOR_CHANNELS = 3;
 const LINEAR_THRESHOLD = 0.04045;
+const LINEAR_TO_SRGB_THRESHOLD = 0.0031308;
 const LINEAR_DIVISOR = 12.92;
 const GAMMA_OFFSET = 0.055;
 const GAMMA_SCALE = 1.055;
@@ -31,23 +32,65 @@ const LMS_TO_OKLAB = [
   [1.9779984951, -2.428592205, 0.4505937099],
   [0.0259040371, 0.7827717662, -0.808675766],
 ] as const;
+const OKLAB_TO_LMS = [
+  [1, 0.3963377774, 0.2158037573],
+  [1, -0.1055613458, -0.0638541728],
+  [1, -0.0894841775, -1.291485548],
+] as const;
+const LMS_TO_LINEAR_SRGB = [
+  [4.0767416621, -3.3077115913, 0.2309699292],
+  [-1.2684380046, 2.6097574011, -0.3413193965],
+  [-0.0041960863, -0.7034186147, 1.707614701],
+] as const;
 function dot(row: readonly number[], a: number, b: number, c: number): number {
   return row[0] * a + row[1] * b + row[2] * c;
 }
-/** Oklab plus opacity; invisible RGB never participates in matching. */
+
+export type Oklab = readonly [lightness: number, a: number, b: number];
+
+function linearRgbToOklab(r: number, g: number, b: number): Oklab {
+  const l = Math.cbrt(dot(LINEAR_SRGB_TO_LMS[0], r, g, b));
+  const m = Math.cbrt(dot(LINEAR_SRGB_TO_LMS[1], r, g, b));
+  const s = Math.cbrt(dot(LINEAR_SRGB_TO_LMS[2], r, g, b));
+  return [
+    dot(LMS_TO_OKLAB[0], l, m, s),
+    dot(LMS_TO_OKLAB[1], l, m, s),
+    dot(LMS_TO_OKLAB[2], l, m, s),
+  ];
+}
+
+/** OKLab plus opacity; invisible RGB never participates in matching. */
 export function paletteCoordinates(color: Rgba): Rgba {
   const opacity = color[3] / UINT8_MAX;
   const r = linearChannel(color[0]);
   const g = linearChannel(color[1]);
   const b = linearChannel(color[2]);
-  const l = Math.cbrt(dot(LINEAR_SRGB_TO_LMS[0], r, g, b));
-  const m = Math.cbrt(dot(LINEAR_SRGB_TO_LMS[1], r, g, b));
-  const s = Math.cbrt(dot(LINEAR_SRGB_TO_LMS[2], r, g, b));
+  const [lightness, a, blueYellow] = linearRgbToOklab(r, g, b);
+  return [lightness * opacity, a * opacity, blueYellow * opacity, opacity];
+}
+
+/** Convert opaque sRGB bytes to OKLab coordinates. */
+export function rgbToOklab(r: number, g: number, b: number): Oklab {
+  return linearRgbToOklab(linearChannel(r), linearChannel(g), linearChannel(b));
+}
+
+function srgbByteFromLinear(value: number): number {
+  const encoded =
+    value <= LINEAR_TO_SRGB_THRESHOLD
+      ? value * LINEAR_DIVISOR
+      : GAMMA_SCALE * value ** (1 / GAMMA_EXPONENT) - GAMMA_OFFSET;
+  return clampByte(encoded * UINT8_MAX);
+}
+
+/** Convert OKLab coordinates back to 8-bit sRGB. */
+export function oklabToRgb(lightness: number, a: number, b: number): [number, number, number] {
+  const l = dot(OKLAB_TO_LMS[0], lightness, a, b) ** 3;
+  const m = dot(OKLAB_TO_LMS[1], lightness, a, b) ** 3;
+  const s = dot(OKLAB_TO_LMS[2], lightness, a, b) ** 3;
   return [
-    dot(LMS_TO_OKLAB[0], l, m, s) * opacity,
-    dot(LMS_TO_OKLAB[1], l, m, s) * opacity,
-    dot(LMS_TO_OKLAB[2], l, m, s) * opacity,
-    opacity,
+    srgbByteFromLinear(dot(LMS_TO_LINEAR_SRGB[0], l, m, s)),
+    srgbByteFromLinear(dot(LMS_TO_LINEAR_SRGB[1], l, m, s)),
+    srgbByteFromLinear(dot(LMS_TO_LINEAR_SRGB[2], l, m, s)),
   ];
 }
 
