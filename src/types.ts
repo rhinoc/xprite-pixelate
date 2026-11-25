@@ -223,7 +223,7 @@ export interface PixelateOptions {
    * palette. Alpha stays per pixel. Off when omitted.
    */
   paletteSnap?: PaletteSnapOptions;
-  /** Light smoothing of similar neighboring colors on the working grid. */
+  /** Smooth similar colors and remove isolated pixels on the working grid. */
   removeNoise?: boolean;
   /** Box mode defaults to straight channel means; premultiplied is useful for compositing. */
   alphaMode?: "straight" | "premultiplied";

@@ -6,6 +6,8 @@ export {
   reduceToPalette,
 } from "./palette.ts";
 export { snapPalette } from "./palette-snap.ts";
+export { removeOrphanPixels, type RemoveOrphanPixelsOptions } from "./orphan-pixels.ts";
+export { settlePixelAlpha } from "./pixel-alpha.ts";
 export { estimateTilt, straighten, MAX_TILT_DEGREES } from "./deskew.ts";
 export { resizeNearest } from "./resize.ts";
 export { pixelateImage, pixelateImageAsync } from "./pixelate.ts";

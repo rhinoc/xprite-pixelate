@@ -11,7 +11,9 @@ import {
   DEFAULT_LINE_GUIDE,
   runsStockPixeloe,
 } from "./outline-prepass.ts";
+import { removeOrphanPixels } from "./orphan-pixels.ts";
 import { snapPalette } from "./palette-snap.ts";
+import { settlePixelAlpha } from "./pixel-alpha.ts";
 import {
   detectWithAlgorithm,
   detectWithAlgorithmAsync,
@@ -21,6 +23,7 @@ import { resizeBox, resizeNearest } from "./resize.ts";
 import { samplePixelation } from "./sampling.ts";
 import {
   OutlinePrepass,
+  PixelationDither,
   PixelationMethod,
   PixelationMode,
   PixelationAlgorithm,
@@ -124,13 +127,22 @@ function sampleImage(
     strength || method === PixelationMethod.Dominant || method === PixelationMethod.Structure
       ? prepareSource(image, target, strength)
       : image;
-  if (method === PixelationMethod.Nearest)
-    return resizeNearest(prepared, target.width, target.height);
-  if (method === PixelationMethod.Box)
-    return resizeBox(prepared, target.width, target.height, alphaMode);
-  if (method === PixelationMethod.MostFrequent)
-    return resizeMostFrequent(prepared, target.width, target.height);
-  return samplePixelation(prepared, target.width, target.height, method);
+  const { width, height } = target;
+  let sampled: PixelBuffer;
+  switch (method) {
+    case PixelationMethod.Nearest:
+      sampled = resizeNearest(prepared, width, height);
+      break;
+    case PixelationMethod.Box:
+      sampled = resizeBox(prepared, width, height, alphaMode);
+      break;
+    case PixelationMethod.MostFrequent:
+      sampled = resizeMostFrequent(prepared, width, height);
+      break;
+    default:
+      sampled = samplePixelation(prepared, width, height, method);
+  }
+  return settlePixelAlpha(image, sampled);
 }
 
 function sizeFromBlock(blockSize: number | PixelationSize, image: PixelBuffer): PixelationSize {
@@ -196,6 +208,23 @@ function validateMethod(value: PixelationMethod | undefined): PixelationMethod {
   return method;
 }
 
+function finishPixelation(
+  sampled: PixelBuffer,
+  source: PixelBuffer,
+  { removeNoise, paletteSnap, preserveDimensions }: PixelateOptions,
+): PixelBuffer {
+  let result = removeNoise ? smoothPixelation(sampled) : sampled;
+  if (paletteSnap) result = snapPalette(result, paletteSnap);
+  if (removeNoise) {
+    const dither = paletteSnap?.dither;
+    const dithered = dither === PixelationDither.Ordered || dither === PixelationDither.FloydSteinberg;
+    result = removeOrphanPixels(result, { absorbInterior: !dithered });
+  }
+  if (preserveDimensions && (result.width !== source.width || result.height !== source.height))
+    result = resizeNearest(result, source.width, source.height);
+  return result;
+}
+
 /**
  * Pixelate an RGBA buffer without touching the source. Nearest mode follows
  * nearest-neighbor `floor(dst * src / dst)` mapping. Box mode averages the
@@ -206,17 +235,7 @@ function validateMethod(value: PixelationMethod | undefined): PixelationMethod {
 export function pixelateImage(image: PixelBuffer, options: PixelateOptions = {}): PixelBuffer {
   assertPixelBuffer(image);
   const method = validateMethod(options.method);
-  const sampled = sampleImage(image, options, method);
-  const smoothed = options.removeNoise ? smoothPixelation(sampled) : sampled;
-  // Limit colors: Lab k-means that keeps rare colours, or snapping to a loaded palette.
-  let result = options.paletteSnap ? snapPalette(smoothed, options.paletteSnap) : smoothed;
-  if (
-    options.preserveDimensions &&
-    (result.width !== image.width || result.height !== image.height)
-  ) {
-    result = resizeNearest(result, image.width, image.height);
-  }
-  return result;
+  return finishPixelation(sampleImage(image, options, method), image, options);
 }
 
 async function sampleImageAsync(
@@ -277,13 +296,5 @@ export async function pixelateImageAsync(
   assertPixelBuffer(image);
   const method = validateMethod(options.method);
   const sampled = await sampleImageAsync(image, options, method);
-  const smoothed = options.removeNoise ? smoothPixelation(sampled) : sampled;
-  let result = options.paletteSnap ? snapPalette(smoothed, options.paletteSnap) : smoothed;
-  if (
-    options.preserveDimensions &&
-    (result.width !== image.width || result.height !== image.height)
-  ) {
-    result = resizeNearest(result, image.width, image.height);
-  }
-  return result;
+  return finishPixelation(sampled, image, options);
 }
