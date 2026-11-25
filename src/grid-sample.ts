@@ -1,6 +1,7 @@
 import type { PixelBuffer } from "./base.ts";
 import { getColorPickerEntry } from "./cell-color-picker.ts";
 import { MAX_RECOVERED_GRID_SIZE, pixelGridCuts } from "./grid.ts";
+import { settleEdgeAlpha } from "./pixel-alpha.ts";
 import { samplePixelation } from "./sampling.ts";
 import {
   CellColorPicker,
@@ -55,87 +56,6 @@ function roundTripError(input: PixelBuffer, candidate: PixelBuffer, cells: Pixel
   }
 
   return pixelCount > 0 ? errorSum / pixelCount : 0;
-}
-
-/**
- * Pixel art is drawn with whole pixels: a cell is either covered or clear. A generated or resampled
- * sprite carries a soft edge instead: the pixels along its outline are partly transparent, and its
- * covered pixels often sit a little below full opacity. Averaged into cells, that leaves a
- * half-transparent ring around the recovered sprite and an almost-opaque inside.
- *
- * A cell that holds both covered pixels (alpha of at least HALF_ALPHA) and uncovered ones lies on
- * the outline. In translucent art, a cell with no covered pixel takes the median alpha of its
- * pixels: a shadow keeps its level, a soft outline (mostly clear) is cleared. It is in the art when its covered pixels fill at least half of it, and clear
- * otherwise; in opaque art, so is a cell with no covered pixel. A covered cell takes the mean alpha of its covered pixels, raised to OPAQUE when the
- * source's art is opaque: at most TRANSLUCENT_SHARE of its visible pixels between TRANSLUCENT_LOW
- * and TRANSLUCENT_HIGH. Art drawn translucent (glass, shadows, glow) keeps its alpha, except that a
- * covered cell above TRANSLUCENT_HIGH is still raised to OPAQUE.
- */
-const HALF_ALPHA = 128;
-const HALF = 0.5;
-const OPAQUE = 255;
-const TRANSLUCENT_LOW = 16;
-const TRANSLUCENT_HIGH = 224;
-/** Share of the visible pixels a soft outline around opaque art stays below. */
-const TRANSLUCENT_SHARE = 0.2;
-
-/** Whether the image's visible pixels are opaque but for a soft edge. */
-function opaqueArt(image: PixelBuffer): boolean {
-  let visible = 0,
-    translucent = 0;
-  for (let o = COLOR_CHANNELS; o < image.data.length; o += CHANNELS) {
-    const alpha = image.data[o];
-    if (!alpha) continue;
-    visible++;
-    if (alpha >= TRANSLUCENT_LOW && alpha <= TRANSLUCENT_HIGH) translucent++;
-  }
-  return visible > 0 && translucent <= TRANSLUCENT_SHARE * visible;
-}
-
-function settleEdgeAlpha(
-  image: PixelBuffer,
-  x: readonly number[],
-  y: readonly number[],
-  out: PixelBuffer,
-): void {
-  const opaque = opaqueArt(image);
-  for (let row = 0; row < out.height; row++)
-    for (let column = 0; column < out.width; column++) {
-      const offset = (row * out.width + column) * CHANNELS;
-      if (!out.data[offset + COLOR_CHANNELS]) continue;
-      const left = Math.max(0, Math.ceil(x[column])),
-        right = Math.min(image.width, Math.ceil(x[column + 1])),
-        top = Math.max(0, Math.ceil(y[row])),
-        bottom = Math.min(image.height, Math.ceil(y[row + 1]));
-      let covered = 0,
-        coveredAlpha = 0;
-      const alphas: number[] = [];
-      for (let py = top; py < bottom; py++)
-        for (let px = left; px < right; px++) {
-          const alpha = image.data[(py * image.width + px) * CHANNELS + COLOR_CHANNELS];
-          alphas.push(alpha);
-          if (alpha < HALF_ALPHA) continue;
-          covered++;
-          coveredAlpha += alpha;
-        }
-      const area = (right - left) * (bottom - top);
-      if (!covered && !opaque) {
-        // Translucent art fills its cell evenly; a soft outline leaves most of the cell clear.
-        alphas.sort((a, b) => a - b);
-        const median = alphas[alphas.length >> 1] ?? 0;
-        if (median < TRANSLUCENT_LOW) out.data.fill(0, offset, offset + CHANNELS);
-        else out.data[offset + COLOR_CHANNELS] = median;
-        continue;
-      }
-      if (covered < HALF * area) out.data.fill(0, offset, offset + CHANNELS);
-      else if (opaque) out.data[offset + COLOR_CHANNELS] = OPAQUE;
-      else {
-        // Translucent art (a shadow, a glow) keeps its alpha, but a covered cell above
-        // TRANSLUCENT_HIGH is opaque art drawn a little below 255, as everywhere else.
-        const alpha = covered < area ? coveredAlpha / covered : out.data[offset + COLOR_CHANNELS];
-        out.data[offset + COLOR_CHANNELS] = alpha > TRANSLUCENT_HIGH ? OPAQUE : Math.round(alpha);
-      }
-    }
 }
 
 /** One RGBA pixel per grid cell: explicit cuts when the grid carries them, else one regular lattice. */
